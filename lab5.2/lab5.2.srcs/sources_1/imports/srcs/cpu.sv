@@ -147,6 +147,7 @@ register_unit reg_file( //register unit instantiansation
     .dr(dr),
     .sr1(sr1),
     .data_bus(data_bus),
+    .ir(ir),
     .sr1_out(sr1_out), //goes to alu unit
     .sr2_out(sr2_out)
 );

@@ -117,33 +117,58 @@ module testbench_week2();
 //    #50
 //    #200
 
-    //xor
-            	reset = 1;
- 	#10
- 	reset = 0;
- 	#10
- 	SW = 16'h0014;
- 	#10
- 	// change switch values to see if hex display is correct
-    run_i = 1;
-    #20
- 	 run_i = 0;
+    //XOR test
+//            	reset = 1;
+// 	#10
+// 	reset = 0;
+// 	#10
+// 	SW = 16'h0014;
+// 	#10
+// 	// change switch values to see if hex display is correct
+//    run_i = 1;
+//    #20
+// 	 run_i = 0;
  	 
-    #50
+//    #50
     
-    continue_i = 1;
-    SW = 16'hEEEE;
-    #10
-    continue_i = 0;
-    #150
-    continue_i = 1;
-    SW = 16'h1111;
-    #10
-    continue_i = 0;
-    #50
-    #200
+//    continue_i = 1;
+//    SW = 16'h1010;
+//    #10
+//    continue_i = 0;
+//    #150
+//    continue_i = 1;
+//    SW = 16'h1100;
+//    #10
+//    continue_i = 0;
+//    #50
+//    #200
     
+    //mutiplication test
+//                	reset = 1;
+// 	#10
+// 	reset = 0;
+// 	#10
+// 	SW = 16'h0031;
+// 	#10
+// 	// change switch values to see if hex display is correct
+//    run_i = 1;
+//    #20
+// 	 run_i = 0;
+ 	 
+//    #150
     
+//    continue_i = 1;
+//    SW = 16'h0005;
+//    #10
+//    continue_i = 0;
+//    #150
+//    continue_i = 1;
+//    SW = 16'h2020;
+//    #10
+//    continue_i = 0;
+//    #50
+//    #1200
+
     $finish();
      end;   
 endmodule

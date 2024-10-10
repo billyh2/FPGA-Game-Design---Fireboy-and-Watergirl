@@ -5,6 +5,7 @@ module register_unit(
     input logic [2:0] dr, //destination register to write
     input logic [2:0] sr1, //source register 1 to read
     input logic [15:0] data_bus,
+    input logic [15:0] ir,
     output logic [15:0] sr1_out,  
     output logic [15:0] sr2_out        
 );
@@ -32,7 +33,7 @@ module register_unit(
     
     always_comb begin
         sr1_out = reg_file[sr1];
-        sr2_out = reg_file[data_bus[2:0]];
+        sr2_out = reg_file[ir[2:0]];
     end
     
 endmodule
