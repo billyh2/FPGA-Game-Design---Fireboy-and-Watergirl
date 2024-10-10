@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"testbench_week1_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../lab5_simplecomputer.srcs/sim_1/new/week1_tb.sv" \
+
+# Do not sort compile order
+nosort
