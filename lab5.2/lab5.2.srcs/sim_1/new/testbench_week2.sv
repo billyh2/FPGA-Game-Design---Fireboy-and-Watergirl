@@ -117,6 +117,28 @@ module testbench_week2();
 //    #50
 //    #200
 
+    //Auto counting test
+    
+//     	reset = 1;
+// 	#10
+// 	reset = 0;
+// 	#10
+// 	SW = 16'h009C;
+// 	#10
+// 	// change switch values to see if hex display is correct
+//    run_i = 1;
+//    #20
+// 	 run_i = 0;
+ 	 
+//    #50
+//    #150
+//    continue_i = 1;
+//    #10
+//    continue_i = 0;
+//    #50
+//    #200
+    
+    
     //XOR test
 //            	reset = 1;
 // 	#10
@@ -169,6 +191,120 @@ module testbench_week2();
 //    #50
 //    #1200
 
+    //sort test
+//    reset = 1;
+// 	#10
+// 	reset = 0;
+// 	#10
+// 	SW = 16'h005A;
+// 	#10
+// 	// change switch values to see if hex display is correct
+//    run_i = 1;
+//    #20
+// 	 run_i = 0;
+ 	 
+//    #150
+    
+//    continue_i = 1;
+//    SW = 16'h0002;
+//    #10
+//    continue_i = 0;
+//    #21000
+    
+//    continue_i = 1;
+//    SW = 16'h0003;
+//    #300
+//    continue_i = 0;
+    
+//    #10 
+//    continue_i = 1;
+//    //index 0
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+//    #300 continue_i = 0;
+//    #10 continue_i = 1;
+//    //index 1
+    
+    
+    //Act once test
+            	reset = 1;
+ 	#10
+ 	reset = 0;
+ 	#10
+ 	SW = 16'h002A;
+ 	#10
+ 	// change switch values to see if hex display is correct
+    run_i = 1;
+    #20
+ 	 run_i = 0;
+ 	 
+    #100
+    
+    continue_i = 1;
+    #10
+    continue_i = 0;
+    #150
+    continue_i = 1;
+    #10
+    continue_i = 0;
+    #50
+    #200
+    
     $finish();
      end;   
 endmodule
