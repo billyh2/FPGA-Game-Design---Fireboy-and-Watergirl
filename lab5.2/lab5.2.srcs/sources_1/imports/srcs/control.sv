@@ -241,11 +241,20 @@ module control (
 			        ld_mdr = 1'b1;		        
                 end
              s_16_1:
-                mem_mem_ena = 1'b1;
+                begin
+                    mem_wr_ena = 1'b1;
+                    mem_mem_ena = 1'b1;
+                end
              s_16_2:
-                mem_mem_ena = 1'b1;
+                begin
+                    mem_wr_ena = 1'b1;
+                    mem_mem_ena = 1'b1;
+                end
              s_16_3:
-                mem_mem_ena = 1'b1;
+                begin
+                    mem_wr_ena = 1'b1;
+                    mem_mem_ena = 1'b1;
+                end
              s_04: //jsr
                 begin
                     gate_pc = 1'b1;
