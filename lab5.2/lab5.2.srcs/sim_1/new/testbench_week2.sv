@@ -53,7 +53,7 @@ module testbench_week2();
 		continue_i = 0;
 		run_i = 1;
     
-    //Basic I/O Test 1
+//    Basic I/O Test 1
 // 	reset = 1;
 // 	#10
 // 	reset = 0;
@@ -64,6 +64,8 @@ module testbench_week2();
 //    run_i = 1;
 //    #20
 // 	 run_i = 0;
+// 	 #200
+// 	 SW = 16'hFFFF;
  	 
 //    #50
     
@@ -84,9 +86,11 @@ module testbench_week2();
 //    #50
     
 //    continue_i = 1;
+//    SW = 16'hFFFF;
 //    #10
 //    continue_i = 0;
 //    #150
+//    SW = 16'h2132;
 //    continue_i = 1;
 //    #10
 //    continue_i = 0;
@@ -192,18 +196,18 @@ module testbench_week2();
 //    #1200
 
     //sort test
-//    reset = 1;
-// 	#10
-// 	reset = 0;
-// 	#10
-// 	SW = 16'h005A;
-// 	#10
-// 	// change switch values to see if hex display is correct
-//    run_i = 1;
-//    #20
-// 	 run_i = 0;
+    reset = 1;
+ 	#10
+ 	reset = 0;
+ 	#10
+ 	SW = 16'h005A;
+ 	#10
+// 	 change switch values to see if hex display is correct
+    run_i = 1;
+    #20
+ 	 run_i = 0;
  	 
-//    #150
+    #150
     
 //    continue_i = 1;
 //    SW = 16'h0002;
@@ -211,99 +215,146 @@ module testbench_week2();
 //    continue_i = 0;
 //    #21000
     
-//    continue_i = 1;
-//    SW = 16'h0003;
-//    #300
-//    continue_i = 0;
+    continue_i = 1;
+    SW = 16'h0002;
+    #10
+    continue_i = 0;
+    #21000
     
-//    #10 
-//    continue_i = 1;
-//    //index 0
+    SW = 16'h0003;
+    #300
+    continue_i = 0;
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #10 
+    continue_i = 1;
+    //index 0
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
-//    #300 continue_i = 0;
-//    #10 continue_i = 1;
-//    //index 1
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
     
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+
+    #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+     #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+        #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+         #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+         #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+         #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+         #300 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1
+    
+         #1000 continue_i = 0;
+    #10 continue_i = 1;
+    //index 1 
     //Act once test
-            	reset = 1;
- 	#10
- 	reset = 0;
- 	#10
- 	SW = 16'h002A;
- 	#10
- 	// change switch values to see if hex display is correct
-    run_i = 1;
-    #20
- 	 run_i = 0;
+//            	reset = 1;
+// 	#10
+// 	reset = 0;
+// 	#10
+// 	SW = 16'h002A;
+// 	#10
+// 	// change switch values to see if hex display is correct
+//    run_i = 1;
+//    #20
+// 	 run_i = 0;
  	 
-    #100
+//    #100
     
-    continue_i = 1;
-    #10
-    continue_i = 0;
-    #150
-    continue_i = 1;
-    #10
-    continue_i = 0;
-    #50
-    #200
+//    continue_i = 1;
+//    #10
+//    continue_i = 0;
+//    #150
+//    continue_i = 1;
+//    #10
+//    continue_i = 0;
+//    #50
+//    #200
     
     $finish();
      end;   
