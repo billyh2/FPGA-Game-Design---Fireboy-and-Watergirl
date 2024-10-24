@@ -1,9 +1,14 @@
-00:48:28 **** Incremental Build of configuration Debug for project mb_blink ****
+17:48:45 **** Incremental Build of configuration Debug for project mb_blink ****
 make all 
 'Building file: ../src/mb_blink.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mb_blink.o" -IC:/Users/Warre/lab_6/workspace/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mb_blink.d" -MT"src/mb_blink.o" -o "src/mb_blink.o" "../src/mb_blink.c"
 'Finished building: ../src/mb_blink.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/Warre/lab_6/workspace/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: mb_blink.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -13,9 +18,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Warre/lab_6/workspace/mb_intro_to
 'Invoking: MicroBlaze Print Size'
 mb-size mb_blink.elf  |tee "mb_blink.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  16468	   1368	   3180	  21016	   5218	mb_blink.elf
+  16480	   1368	   3176	  21024	   5220	mb_blink.elf
 'Finished building: mb_blink.elf.size'
 ' '
 
-00:48:29 Build Finished (took 339ms)
+17:48:47 Build Finished (took 1s.381ms)
 
