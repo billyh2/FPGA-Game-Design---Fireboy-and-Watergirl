@@ -1,8 +1,0 @@
-15:03:25 **** Clean-only build of configuration Debug for project mb_usb_system ****
-make clean 
-rm -rf ./_sds
-rm -rf package
-rm -f system.bif
-
-15:03:25 Build Finished (took 94ms)
-
