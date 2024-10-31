@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {IP_Flow 19-2207}  -string {{WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Warre/ip_repo/hdmi_text_controller_1_0' already exists; ignoring attempt to add it again.}}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
@@ -78,13 +77,15 @@ create_project -in_memory -part xc7s50csga324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/Warre/lab_7.1/lab_7.1.cache/wt [current_project]
 set_property parent.project_path C:/Users/Warre/lab_7.1/lab_7.1.xpr [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   c:/Users/Warre/ip_repo/hdmi_text_controller_1_0
-  c:/Users/Warre/ip_repo/hdmi_text_controller_1_0
+  c:/Users/Warre/Downloads/RD_hdmi_ip2020/hdmi_tx_1.0
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/Warre/lab_7.1/lab_7.1.cache/ip [current_project]
@@ -93,9 +94,18 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/imports/lab7_1_provided_fa24/VGA_controller.sv
+  C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/new/color_mapper.sv
+  C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/imports/lab7_1_provided_fa24/font_rom.sv
   C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/imports/lab7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv
   C:/Users/Warre/Downloads/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv
 }
+read_ip -quiet C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/lab_7.1/lab_7.1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Warre/lab_7.1/lab_7.1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Warre/lab_7.1/lab_7.1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/lab_7.1/lab_7.1.srcs/sources_1/ip/hdmi_tx_0_1/hdmi_tx_0.xci
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

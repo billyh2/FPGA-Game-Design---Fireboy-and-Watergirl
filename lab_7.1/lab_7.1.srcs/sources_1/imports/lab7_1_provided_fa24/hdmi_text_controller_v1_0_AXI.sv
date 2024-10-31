@@ -38,7 +38,9 @@ module hdmi_text_controller_v1_0_AXI #
 )
 (
     // Users to add ports here
-
+    output logic [31:0] control_reg,
+    output logic [31:0] word,
+    input logic [11:0] address, //address width 12 bits
     // User ports ends
 
     // Global Clock Signal
@@ -389,6 +391,8 @@ begin
 end    
 
 // Add user logic here
+    assign control_reg = slv_regs[600];
+    assign word = slv_regs[address];
 
 // User logic ends
 
