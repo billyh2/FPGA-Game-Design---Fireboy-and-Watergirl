@@ -10,7 +10,6 @@
       "tool_version": "2022.2"
     },
     "design_tree": {
-      "microblaze_0": "",
       "microblaze_0_local_memory": {
         "dlmb_v10": "",
         "ilmb_v10": "",
@@ -30,7 +29,8 @@
       "rst_clk_wiz_1_100M": "",
       "axi_uartlite_0": "",
       "clk_wiz_1": "",
-      "hdmi_text_controller_0": ""
+      "hdmi_text_controller_0": "",
+      "microblaze_0": ""
     },
     "interface_ports": {
       "uart_rtl_0": {
@@ -97,83 +97,6 @@
       }
     },
     "components": {
-      "microblaze_0": {
-        "vlnv": "xilinx.com:ip:microblaze:11.0",
-        "xci_name": "mb_block_microblaze_0_0",
-        "xci_path": "ip\\mb_block_microblaze_0_0\\mb_block_microblaze_0_0.xci",
-        "inst_hier_path": "microblaze_0",
-        "parameters": {
-          "C_DEBUG_ENABLED": {
-            "value": "1"
-          },
-          "C_D_AXI": {
-            "value": "1"
-          },
-          "C_D_LMB": {
-            "value": "1"
-          },
-          "C_I_LMB": {
-            "value": "1"
-          },
-          "G_TEMPLATE_LIST": {
-            "value": "8"
-          }
-        },
-        "interface_ports": {
-          "DLMB": {
-            "vlnv": "xilinx.com:interface:lmb_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "ILMB": {
-            "vlnv": "xilinx.com:interface:lmb_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Instruction",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_DP": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          }
-        },
-        "addressing": {
-          "address_spaces": {
-            "Data": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Instruction": {
-              "range": "4G",
-              "width": "32"
-            }
-          }
-        },
-        "hdl_attributes": {
-          "BMM_INFO_PROCESSOR": {
-            "value": "microblaze-le > mb_block microblaze_0_local_memory/dlmb_bram_if_cntlr",
-            "value_src": "default"
-          },
-          "KEEP_HIERARCHY": {
-            "value": "yes",
-            "value_src": "default"
-          }
-        }
-      },
       "microblaze_0_local_memory": {
         "interface_ports": {
           "DLMB": {
@@ -825,6 +748,67 @@
         "xci_name": "mb_block_hdmi_text_controller_0_0",
         "xci_path": "ip\\mb_block_hdmi_text_controller_0_0\\mb_block_hdmi_text_controller_0_0.xci",
         "inst_hier_path": "hdmi_text_controller_0"
+      },
+      "microblaze_0": {
+        "vlnv": "xilinx.com:ip:microblaze:11.0",
+        "xci_name": "mb_block_microblaze_0_2",
+        "xci_path": "ip\\mb_block_microblaze_0_2\\mb_block_microblaze_0_2.xci",
+        "inst_hier_path": "microblaze_0",
+        "parameters": {
+          "C_D_LMB": {
+            "value": "1"
+          },
+          "C_I_LMB": {
+            "value": "1"
+          },
+          "G_TEMPLATE_LIST": {
+            "value": "8"
+          }
+        },
+        "interface_ports": {
+          "DLMB": {
+            "vlnv": "xilinx.com:interface:lmb_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "ILMB": {
+            "vlnv": "xilinx.com:interface:lmb_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Instruction",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "M_AXI_DP": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "4G",
+              "width": "32"
+            },
+            "Instruction": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
       }
     },
     "interface_nets": {
@@ -840,12 +824,6 @@
           "hdmi_text_controller_0/HDMI"
         ]
       },
-      "microblaze_0_axi_dp": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/S00_AXI",
-          "microblaze_0/M_AXI_DP"
-        ]
-      },
       "microblaze_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M01_AXI",
@@ -858,34 +836,10 @@
           "axi_uartlite_0/S_AXI"
         ]
       },
-      "microblaze_0_debug": {
-        "interface_ports": [
-          "mdm_1/MBDEBUG_0",
-          "microblaze_0/DEBUG"
-        ]
-      },
-      "microblaze_0_dlmb_1": {
-        "interface_ports": [
-          "microblaze_0/DLMB",
-          "microblaze_0_local_memory/DLMB"
-        ]
-      },
-      "microblaze_0_ilmb_1": {
-        "interface_ports": [
-          "microblaze_0/ILMB",
-          "microblaze_0_local_memory/ILMB"
-        ]
-      },
       "microblaze_0_intc_axi": {
         "interface_ports": [
           "microblaze_0_axi_periph/M00_AXI",
           "microblaze_0_axi_intc/s_axi"
-        ]
-      },
-      "microblaze_0_interrupt": {
-        "interface_ports": [
-          "microblaze_0_axi_intc/interrupt",
-          "microblaze_0/INTERRUPT"
         ]
       }
     },
@@ -918,7 +872,6 @@
       "microblaze_0_Clk": {
         "ports": [
           "clk_wiz_1/clk_out1",
-          "microblaze_0/Clk",
           "microblaze_0_axi_periph/ACLK",
           "microblaze_0_axi_periph/S00_ACLK",
           "microblaze_0_axi_periph/M00_ACLK",
@@ -947,7 +900,6 @@
       "rst_clk_wiz_1_100M_mb_reset": {
         "ports": [
           "rst_clk_wiz_1_100M/mb_reset",
-          "microblaze_0/Reset",
           "microblaze_0_axi_intc/processor_rst"
         ]
       },
@@ -963,49 +915,6 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "hdmi_text_controller_0/axi_aresetn"
         ]
-      }
-    },
-    "addressing": {
-      "/microblaze_0": {
-        "address_spaces": {
-          "Data": {
-            "segments": {
-              "SEG_axi_uartlite_0_Reg": {
-                "address_block": "/axi_uartlite_0/S_AXI/Reg",
-                "offset": "0x40600000",
-                "range": "64K"
-              },
-              "SEG_dlmb_bram_if_cntlr_Mem": {
-                "address_block": "/microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem",
-                "offset": "0x00000000",
-                "range": "128K",
-                "offset_high_param": "C_HIGHADDR"
-              },
-              "SEG_hdmi_text_controller_0_AXI_reg": {
-                "address_block": "/hdmi_text_controller_0/AXI/AXI_reg",
-                "offset": "0x44A00000",
-                "range": "64K",
-                "offset_base_param": "C_AXI_BASEADDR",
-                "offset_high_param": "C_AXI_HIGHADDR"
-              },
-              "SEG_microblaze_0_axi_intc_Reg": {
-                "address_block": "/microblaze_0_axi_intc/S_AXI/Reg",
-                "offset": "0x41200000",
-                "range": "64K"
-              }
-            }
-          },
-          "Instruction": {
-            "segments": {
-              "SEG_ilmb_bram_if_cntlr_Mem": {
-                "address_block": "/microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem",
-                "offset": "0x00000000",
-                "range": "128K",
-                "offset_high_param": "C_HIGHADDR"
-              }
-            }
-          }
-        }
       }
     }
   }

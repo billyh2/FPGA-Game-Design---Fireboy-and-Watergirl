@@ -125,3 +125,358 @@ configparams mdm-detect-bscan-mask 2
 23:09:41 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab7_1_top.mmi' stored in project is removed.
 23:09:41 INFO  : The updated bitstream files are copied from platform to folder 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream' in project 'lebron_goat_bahh'.
 23:10:56 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+23:25:13 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+23:25:23 INFO  : Result from executing command 'removePlatformRepo': 
+23:26:13 INFO  : Result from executing command 'getProjects': lab7_1_top
+23:26:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:26:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:35 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:26:35 INFO  : 'jtag frequency' command is executed.
+23:26:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:26:36 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:26:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:36 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:26:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:26:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:27:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:27:37 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:27:37 INFO  : 'jtag frequency' command is executed.
+23:27:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:27:38 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:27:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:27:38 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:27:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:27:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:29:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:17 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:29:17 INFO  : 'jtag frequency' command is executed.
+23:29:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:29:19 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:29:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:29:19 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:29:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:29:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:30:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:52 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:30:52 INFO  : 'jtag frequency' command is executed.
+23:30:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:30:54 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:30:54 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:54 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:30:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:30:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:44:29 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+23:44:42 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+23:44:51 INFO  : Result from executing command 'removePlatformRepo': 
+23:45:41 INFO  : Result from executing command 'getProjects': lab7_1_top
+23:45:41 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:45:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:58 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:45:58 INFO  : 'jtag frequency' command is executed.
+23:45:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:46:00 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:46:00 INFO  : Context for processor 'microblaze_0' is selected.
+23:46:00 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:46:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:46:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:46:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:46:07 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:46:08 INFO  : 'jtag frequency' command is executed.
+23:46:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:46:09 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:46:09 INFO  : Context for processor 'microblaze_0' is selected.
+23:46:09 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:46:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:46:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+23:46:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:46:31 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+23:46:31 INFO  : 'jtag frequency' command is executed.
+23:46:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:46:32 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+23:46:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:46:32 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+23:46:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:46:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+00:33:51 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+00:34:05 INFO  : Result from executing command 'removePlatformRepo': 
+00:34:55 INFO  : Result from executing command 'getProjects': lab7_1_top
+00:34:55 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:35:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:35:31 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+00:35:31 INFO  : 'jtag frequency' command is executed.
+00:35:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:35:32 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+00:35:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:35:32 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+00:35:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:35:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+00:44:53 INFO  : Result from executing command 'removePlatformRepo': 
+00:45:24 INFO  : Result from executing command 'getProjects': lab7_1_top
+00:45:24 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:45:26 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+00:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:31 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+00:46:31 INFO  : 'jtag frequency' command is executed.
+00:46:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:46:33 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+00:46:33 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:33 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+00:46:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:46:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+00:46:43 INFO  : Result from executing command 'removePlatformRepo': 
+00:47:14 INFO  : Result from executing command 'getProjects': lab7_1_top
+00:47:14 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:47:15 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+00:55:28 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+00:55:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:55:43 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+00:55:43 INFO  : 'jtag frequency' command is executed.
+00:55:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:55:44 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit"
+00:55:45 INFO  : Context for processor 'microblaze_0' is selected.
+00:55:45 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa'.
+00:55:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:55:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/lab7_1_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+00:56:31 INFO  : Result from executing command 'getProjects': lab7_1_top
+00:56:31 INFO  : Result from executing command 'getPlatforms': lab7_1_top|U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/lab7_1_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:56:32 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+00:56:35 INFO  : The hardware specification used by project 'lebron_goat_bahh' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+00:56:35 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab7_1_top.bit' stored in project is removed.
+00:56:35 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab7_1_top.mmi' stored in project is removed.
+00:56:36 INFO  : The updated bitstream files are copied from platform to folder 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream' in project 'lebron_goat_bahh'.
+00:56:38 INFO  : Result from executing command 'removePlatformRepo': 
+00:57:42 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+00:57:55 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=lebron_goat_bahh;fileType=hw;}' in launch configuration 'Debugger_lebron_goat_bahh-GDB'.
+00:58:08 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=lebron_goat_bahh;fileType=hw;}' in launch configuration 'Debugger_lebron_goat_bahh-GDB'.
+00:58:24 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+00:58:29 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+00:59:06 INFO  : Result from executing command 'getProjects': lab7_1_top
+00:59:06 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:59:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:47 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+00:59:47 INFO  : 'jtag frequency' command is executed.
+00:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:59:47 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+00:59:47 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+00:59:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:59:47 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:00:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:04 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:00:04 INFO  : 'jtag frequency' command is executed.
+01:00:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:00:04 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:00:04 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:00:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:00:04 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:00:57 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+01:01:04 INFO  : Result from executing command 'removePlatformRepo': 
+01:01:49 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:01:49 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:02:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:02:03 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:02:03 INFO  : 'jtag frequency' command is executed.
+01:02:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:02:03 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:02:03 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:02:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:02:03 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:02:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:02:58 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:02:58 INFO  : 'jtag frequency' command is executed.
+01:02:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:02:58 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:02:58 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:02:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:02:58 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:03:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:03:02 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:03:02 INFO  : 'jtag frequency' command is executed.
+01:03:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:03:03 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:03:03 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:03:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:03:03 ERROR : couldn't open "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab7_1_top.bit": no such file or directory
+01:03:16 INFO  : Result from executing command 'removePlatformRepo': 
+01:03:45 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=lebron_goat_bahh;fileType=hw;}' in launch configuration 'Debugger_lebron_goat_bahh-GDB'.
+01:04:14 ERROR : Invalid hardware specification '${sdxTcfLaunchFile:project=lebron_goat_bahh;fileType=hw;}' in launch configuration 'Debugger_lebron_goat_bahh-GDB'.
+01:04:25 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+01:04:52 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:04:52 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:04:53 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:05:11 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+01:05:20 INFO  : Result from executing command 'removePlatformRepo': 
+01:06:06 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:06:06 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:06:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:06:21 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:06:21 INFO  : 'jtag frequency' command is executed.
+01:06:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:06:23 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab_7_1_top.bit"
+01:06:23 INFO  : Context for processor 'microblaze_0' is selected.
+01:06:23 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/mb_usb_hdmi_top.xsa'.
+01:06:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:06:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab_7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+01:06:50 INFO  : Result from executing command 'removePlatformRepo': 
+01:07:19 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:07:19 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:07:21 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:07:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:07:30 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+01:07:30 INFO  : 'jtag frequency' command is executed.
+01:07:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+01:07:31 INFO  : Device configured successfully with "U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab_7_1_top.bit"
+01:07:31 INFO  : Context for processor 'microblaze_0' is selected.
+01:07:31 INFO  : Hardware design and registers information is loaded from 'U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/mb_usb_hdmi_top.xsa'.
+01:07:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file U:/ECE385/lab_7.1/lebron_goat_bahh/_ide/bitstream/lab_7_1_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+01:07:40 INFO  : Result from executing command 'removePlatformRepo': 
+01:08:13 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:08:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:08:14 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:08:41 INFO  : Result from executing command 'removePlatformRepo': 
+01:09:15 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:09:15 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:09:16 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:11:32 INFO  : Result from executing command 'removePlatformRepo': 
+01:12:07 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:12:07 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:12:08 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:12:59 INFO  : Result from executing command 'removePlatformRepo': 
+01:13:35 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:13:35 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:13:37 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:14:43 INFO  : Result from executing command 'removePlatformRepo': 
+01:16:29 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+01:16:42 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+01:17:24 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:17:24 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:17:25 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:17:28 INFO  : The hardware specification used by project 'lebron_goat_bahh' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:17:28 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab_7_1_top.bit' stored in project is removed.
+01:17:28 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab_7_1_top.mmi' stored in project is removed.
+01:17:28 INFO  : The updated bitstream files are copied from platform to folder 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream' in project 'lebron_goat_bahh'.
+01:18:22 INFO  : Hardware specification for platform project 'lab7_1_top' is updated.
+01:18:33 INFO  : Result from executing command 'removePlatformRepo': 
+01:19:18 INFO  : Result from executing command 'getProjects': lab7_1_top
+01:19:18 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:19:20 INFO  : Checking for BSP changes to sync application flags for project 'lebron_goat_bahh'...
+01:19:22 INFO  : The hardware specification used by project 'lebron_goat_bahh' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:19:22 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab7_1_top.bit' stored in project is removed.
+01:19:22 INFO  : The file 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream\lab7_1_top.mmi' stored in project is removed.
+01:19:23 INFO  : The updated bitstream files are copied from platform to folder 'U:\ECE385\lab_7.1\lebron_goat_bahh\_ide\bitstream' in project 'lebron_goat_bahh'.

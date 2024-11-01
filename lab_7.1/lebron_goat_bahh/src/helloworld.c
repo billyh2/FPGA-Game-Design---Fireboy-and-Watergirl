@@ -48,18 +48,18 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-#include "./hdmi_text_controller.h"
+#include "hdmi_text_controller.h"
 
 
 int main()
 {
     init_platform();
 
-    xil_printf("Hello World\n\r");
-    xil_printf("Successfully ran Hello World application");
-    while(1){
+    while(1) {
     	hdmiTestWeek1();
     }
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
     cleanup_platform();
     return 0;
 }

@@ -1,7 +1,135 @@
-Nothing to build in platform 'lab7_1_top'
+01:04:32 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#35
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
 
-23:10:56 **** Incremental Build of configuration Debug for project lebron_goat_bahh ****
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:04:53 **** Build of configuration Debug for project lebron_goat_bahh ****
 make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
@@ -19,10 +147,1554 @@ In file included from ../src/helloworld.c:51:
       |                                          ^~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: lebron_goat_bahh.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
 c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 41928 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:05:18 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#36
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:05:28 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:05:29 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:05:29 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#37
+C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:06:48 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#38
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:06:58 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:06:58 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:06:59 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#39
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:07:21 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/./hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/./hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 41952 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:07:37 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#40
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:07:48 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:07:48 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:07:52 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#41
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:08:14 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/./hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/./hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 41952 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:08:39 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#42
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:08:49 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:08:49 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:08:55 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#43
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:09:16 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/./hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/./hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 41928 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:11:29 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#44
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:11:39 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:11:40 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:11:46 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#45
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:12:08 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:9: warning: implicit declaration of function 'hdmiTestWeek1' [-Wimplicit-function-declaration]
+   58 |         hdmiTestWeek1();
+      |         ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 39728 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:12:57 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#46
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:13:07 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:13:08 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:13:15 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#47
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:13:37 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 39728 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:14:41 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#48
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:14:51 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:14:52 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:16:40 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#49
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:16:43 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:16:43 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:16:44 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#50
+C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/hdmi_text_controller_v1_0/src"
+
+make -C microblaze_0/libsrc/hdmi_text_controller_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER
+=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-co
+mpare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/hdmi_text_controller_v1_0/src"
+
+make -C microblaze_0/libsrc/hdmi_text_controller_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb
+-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compa
+re" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Compiling hdmi_text_controller..."
+
+In file included from hdmi_text_controller.h:8,
+                 from hdmi_text_controller.c:4:
+../../../include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hdmi_text_controller.c: In function 'hdmiTestWeek1':
+hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+hdmi_text_controller.c:93:27: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+   93 |         for (int i = 0; i < sizeof(inverted); i++)
+      |                           ^
+hdmi_text_controller.c:67:25: warning: writing 31 bytes into a region of size 0 [-Wstringop-overflow=]
+   67 |                         memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+j,greentest, sizeof(greentest));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hdmi_text_controller.c:77:25: warning: writing 29 bytes into a region of size 0 [-Wstringop-overflow=]
+   77 |                         memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+(ROWS-j),redtest, sizeof(redtest));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hdmi_text_controller.c:87:25: warning: writing 30 bytes into a region of size 0 [-Wstringop-overflow=]
+   87 |                         memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS],blutest, sizeof(blutest));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hdmi_text_controller.c:112:9: warning: writing 66 bytes into a region of size 0 [-Wstringop-overflow=]
+  112 |         memcpy((void*)&hdmi_ctrl->VRAM[0],completed, sizeof(completed));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mb-ar: creating ../../../lib/libxil.a
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make include in microblaze_0/libsrc/hdmi_text_controller_v1_0/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/hdmi_text_controller_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER
+=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-co
+mpare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+'Finished building libraries'
+
+01:17:25 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 39728 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lebron_goat_bahh.elf] Error 1
+01:18:31 **** Clean-only build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top clean 
+XSDB Server Channel: tcfchan#51
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/hdmi_text_controller_v1_0/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+01:18:41 **** Clean-only build of configuration Debug for project lebron_goat_bahh ****
+make clean 
+rm -rf  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o  ./src/hdmi_text_controller.d ./src/helloworld.d ./src/platform.d  lebron_goat_bahh.elf.size  lebron_goat_bahh.elf
+' '
+01:18:42 **** Clean-only build of configuration Debug for project lebron_goat_bahh_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+01:18:42 **** Build of project lab7_1_top ****
+buildplatform.bat 56958 lab7_1_top  
+XSDB Server Channel: tcfchan#52
+C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc
+_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterru
+pt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o 
+microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartli
+te_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+01:19:20 **** Build of configuration Debug for project lebron_goat_bahh ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:51:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+U:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/hdmi_text_controller.h:92:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lebron_goat_bahh.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/ECE385/lab_7.1/lab7_1_top/export/lab7_1_top/sw/lab7_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lebron_goat_bahh.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: lebron_goat_bahh.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 39728 bytes
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:38: lebron_goat_bahh.elf] Error 1

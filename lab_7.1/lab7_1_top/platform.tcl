@@ -29,3 +29,50 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/lab7_1_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/lab7_1_top.xsa}
+platform config -updatehw {U:/ECE385/lab_7.1/lab7_1_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/lab7_1_top.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform config -updatehw {C:/Users/BILLYH2/Downloads/lab_7_1/lab_7_1/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform config -updatehw {C:/Users/BILLYH2/Downloads/lab_7_1/lab_7_1/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform clean
+platform clean
+platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform config -updatehw {U:/ECE385/lab_7.1/lab7_1_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {U:/ECE385/lab_7.1/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate

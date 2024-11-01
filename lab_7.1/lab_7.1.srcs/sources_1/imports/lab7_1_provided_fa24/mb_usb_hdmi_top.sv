@@ -58,7 +58,7 @@ module lab7_1_top(
 //        .hdmi_clk_p(hdmi_0_tmds_clk_p)
 //    );
     
-    mb_block_wrapper mb_block_i (
+    mb_cock mb_cock_i (
         .clk_100MHz(Clk),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),
         .uart_rtl_0_txd(uart_rtl_0_txd),
