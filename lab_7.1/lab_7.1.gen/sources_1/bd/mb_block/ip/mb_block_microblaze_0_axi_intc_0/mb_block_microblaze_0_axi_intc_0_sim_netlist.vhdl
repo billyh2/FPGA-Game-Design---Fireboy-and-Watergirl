@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Wed Oct 30 21:20:29 2024
+-- Date        : Wed Oct 30 21:20:28 2024
 -- Host        : Elinnation running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Warre/lab_7.1/lab_7.1.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top mb_block_microblaze_0_axi_intc_0 -prefix
+--               mb_block_microblaze_0_axi_intc_0_ mb_block_microblaze_0_axi_intc_0_sim_netlist.vhdl
 -- Design      : mb_block_microblaze_0_axi_intc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -59,8 +59,6 @@ entity mb_block_microblaze_0_axi_intc_0_address_decoder is
     p_0_in : in STD_LOGIC;
     Bus_RNW_reg_reg_3 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_address_decoder : entity is "address_decoder";
 end mb_block_microblaze_0_axi_intc_0_address_decoder;
 
 architecture STRUCTURE of mb_block_microblaze_0_axi_intc_0_address_decoder is
@@ -1222,8 +1220,6 @@ entity mb_block_microblaze_0_axi_intc_0_shared_ram_ivar is
     bus2ip_addr_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ivar_index_axi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_shared_ram_ivar : entity is "shared_ram_ivar";
 end mb_block_microblaze_0_axi_intc_0_shared_ram_ivar;
 
 architecture STRUCTURE of mb_block_microblaze_0_axi_intc_0_shared_ram_ivar is
@@ -2782,8 +2778,6 @@ entity mb_block_microblaze_0_axi_intc_0_intc_core is
     bus2ip_wrce : in STD_LOGIC_VECTOR ( 0 to 0 );
     bus2ip_addr_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_intc_core : entity is "intc_core";
 end mb_block_microblaze_0_axi_intc_0_intc_core;
 
 architecture STRUCTURE of mb_block_microblaze_0_axi_intc_0_intc_core is
@@ -3338,8 +3332,6 @@ entity mb_block_microblaze_0_axi_intc_0_slave_attachment is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
     cie : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_slave_attachment : entity is "slave_attachment";
 end mb_block_microblaze_0_axi_intc_0_slave_attachment;
 
 architecture STRUCTURE of mb_block_microblaze_0_axi_intc_0_slave_attachment is
@@ -4498,8 +4490,6 @@ entity mb_block_microblaze_0_axi_intc_0_axi_lite_ipif is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
     cie : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end mb_block_microblaze_0_axi_intc_0_axi_lite_ipif;
 
 architecture STRUCTURE of mb_block_microblaze_0_axi_intc_0_axi_lite_ipif is
@@ -4648,8 +4638,6 @@ entity mb_block_microblaze_0_axi_intc_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of mb_block_microblaze_0_axi_intc_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of mb_block_microblaze_0_axi_intc_0_axi_intc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_microblaze_0_axi_intc_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of mb_block_microblaze_0_axi_intc_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;

@@ -1,3 +1,10 @@
+-makelib xcelium_lib/xpm -sv \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/microblaze_v11_0_10 \
   "../../../../lab_7.1.gen/sources_1/bd/mb_block/ipshared/1f7b/hdl/microblaze_v11_0_vh_rfs.vhd" \
 -endlib
@@ -66,10 +73,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/ip/mb_block_mdm_1_0/sim/mb_block_mdm_1_0.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_clk_wiz.v" \
-  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0.v" \
--endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
   "../../../../lab_7.1.gen/sources_1/bd/mb_block/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
 -endlib
@@ -91,10 +94,24 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/mb_block/ip/mb_block_clk_wiz_0_0/mb_block_clk_wiz_0_0_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_clk_wiz_0_0/mb_block_clk_wiz_0_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/encode.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/serdes_10_to_1.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/srldelay.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/mb_block/Downloads/lab7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" \
-  "../../../bd/mb_block/Downloads/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_1_0/sim/mb_block_hdmi_text_controller_1_0.sv" \
+  "../../../bd/mb_block/ipshared/e10d/src/VGA_controller.sv" \
+  "../../../bd/mb_block/ipshared/e10d/src/color_mapper.sv" \
+  "../../../bd/mb_block/ipshared/e10d/src/font_rom.sv" \
+  "../../../bd/mb_block/ipshared/e10d/src/hdmi_text_controller_v1_0_AXI.sv" \
+  "../../../bd/mb_block/ipshared/e10d/src/hdmi_text_controller_v1_0.sv" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/sim/mb_block_hdmi_text_controller_0_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/sim/mb_block.v" \
