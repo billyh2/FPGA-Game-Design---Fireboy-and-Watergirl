@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Warre/lab_7.1/lab_7.1.runs/synth_1'
+HD_PWD='U:/ECE385/lab_7.1/lab_7.1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log hdmi_text_controller_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_text_controller_v1_0.tcl
+EAStep vivado -log lab7_1_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_1_top.tcl

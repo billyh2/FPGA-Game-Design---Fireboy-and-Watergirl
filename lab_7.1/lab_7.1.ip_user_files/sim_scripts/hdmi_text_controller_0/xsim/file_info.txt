@@ -1,4 +1,0 @@
-hdmi_text_controller_v1_0_AXI.sv,systemverilog,xil_defaultlib,../../../../lab_7.1.gen/sources_1/Downloads/lab7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv,
-hdmi_text_controller_v1_0.sv,systemverilog,xil_defaultlib,../../../../lab_7.1.gen/sources_1/Downloads/lab7_1_provided_fa24/hdmi_text_controller_v1_0.sv,
-hdmi_text_controller_0.sv,systemverilog,xil_defaultlib,../../../../lab_7.1.gen/sources_1/ip/hdmi_text_controller_0/sim/hdmi_text_controller_0.sv,
-glbl.v,Verilog,xil_defaultlib,glbl.v
