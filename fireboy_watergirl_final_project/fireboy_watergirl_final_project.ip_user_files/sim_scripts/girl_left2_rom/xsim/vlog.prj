@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../fireboy_watergirl_final_project.gen/sources_1/ip/girl_left2_rom/sim/girl_left2_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

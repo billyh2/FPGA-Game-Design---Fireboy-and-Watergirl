@@ -1,0 +1,7 @@
++===============================+===============================+========================================+
+| Launch Setup Clock            | Launch Hold Clock             | Pin                                    |
++===============================+===============================+========================================+
+| clk_out1_design_1_clk_wiz_1_0 | clk_out1_design_1_clk_wiz_1_0 | game_state_machine/curr_state_reg[0]/D |
+| clk_out1_design_1_clk_wiz_1_0 | clk_out1_design_1_clk_wiz_1_0 | game_state_machine/curr_state_reg[1]/D |
+| clk_out1_design_1_clk_wiz_1_0 | clk_out1_design_1_clk_wiz_1_0 | game_state_machine/curr_state_reg[2]/D |
++-------------------------------+-------------------------------+----------------------------------------+
