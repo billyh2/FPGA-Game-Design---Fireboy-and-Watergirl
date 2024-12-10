@@ -1,9 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/7698" --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/ip/clk_wiz_0" \
-"mb_final_top_tb_func_synth.v" \
-
-sv xil_defaultlib  --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/7698" --include "../../../../../fireboy_watergirl_final_project.gen/sources_1/ip/clk_wiz_0" \
-"../../../../../fireboy_watergirl_final_project.srcs/sim_1/new/top_level_tb.sv" \
-
-# Do not sort compile order
-nosort

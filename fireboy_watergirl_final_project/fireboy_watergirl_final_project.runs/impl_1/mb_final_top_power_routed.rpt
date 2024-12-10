@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sat Dec  7 02:40:07 2024
+| Date             : Sun Dec  8 03:57:15 2024
 | Host             : Elinnation running 64-bit major release  (build 9200)
 | Command          : report_power -file mb_final_top_power_routed.rpt -pb mb_final_top_power_summary_routed.pb -rpx mb_final_top_power_routed.rpx
 | Design           : mb_final_top
@@ -53,19 +53,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.018 |       12 |       --- |             --- |
-| Slice Logic              |     0.012 |     8166 |       --- |             --- |
-|   LUT as Logic           |     0.010 |     2960 |     32600 |            9.08 |
+| Slice Logic              |     0.012 |     8199 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     2978 |     32600 |            9.13 |
 |   LUT as Distributed RAM |     0.001 |      172 |      9600 |            1.79 |
 |   CARRY4                 |    <0.001 |      179 |      8150 |            2.20 |
-|   Register               |    <0.001 |     2957 |     65200 |            4.54 |
+|   Register               |    <0.001 |     2966 |     65200 |            4.55 |
 |   LUT as Shift Register  |    <0.001 |      112 |      9600 |            1.17 |
 |   F7/F8 Muxes            |    <0.001 |       36 |     32600 |            0.11 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |      963 |       --- |             --- |
-| Signals                  |     0.021 |     5775 |       --- |             --- |
+| Signals                  |     0.021 |     5802 |       --- |             --- |
 | Block RAM                |     0.065 |     69.5 |        75 |           92.67 |
 | MMCM                     |     0.212 |        2 |         5 |           40.00 |
 | DSPs                     |     0.008 |        9 |       120 |            7.50 |
-| I/O                      |     0.144 |       42 |       210 |           20.00 |
+| I/O                      |     0.143 |       42 |       210 |           20.00 |
 | Static Power             |     0.079 |          |           |                 |
 | Total                    |     0.558 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -177,8 +178,8 @@ Table of Contents
 |       U0                    |     0.004 |
 |     timer_usb_axi           |     0.002 |
 |       U0                    |     0.002 |
-|   vga_to_hdmi               |     0.133 |
-|     inst                    |     0.133 |
+|   vga_to_hdmi               |     0.134 |
+|     inst                    |     0.134 |
 |   watergirl                 |     0.005 |
 |     watergirl_rom           |     0.001 |
 |       U0                    |     0.001 |
@@ -188,8 +189,8 @@ Table of Contents
 |       U0                    |     0.001 |
 |     watergirl_rom_right2    |     0.001 |
 |       U0                    |     0.001 |
-|   watergirl_instance        |     0.055 |
-|     collision               |     0.052 |
+|   watergirl_instance        |     0.056 |
+|     collision               |     0.053 |
 |       d1                    |     0.009 |
 |       d2                    |     0.009 |
 |       d3                    |     0.009 |

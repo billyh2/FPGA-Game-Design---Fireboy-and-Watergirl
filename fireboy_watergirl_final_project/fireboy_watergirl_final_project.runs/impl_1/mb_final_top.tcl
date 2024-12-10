@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.runs/impl_1/mb_final_top.tcl"
+  variable script "C:/Users/Warre/OneDrive/Documents/GitHub/ECE385/fireboy_watergirl_final_project/fireboy_watergirl_final_project.runs/impl_1/mb_final_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -126,7 +125,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 7
   open_checkpoint mb_final_top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Warre/OneDrive/Documents/GitHub/ECE385/fireboy_watergirl_final_project/fireboy_watergirl_final_project.cache/wt [current_project]
 set_property TOP mb_final_top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

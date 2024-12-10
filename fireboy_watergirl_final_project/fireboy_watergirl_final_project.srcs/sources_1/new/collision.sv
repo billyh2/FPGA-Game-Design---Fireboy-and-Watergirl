@@ -145,36 +145,28 @@ module wall_checker(
 
     always_comb begin
         // Up collision
-        is_collide_up = ((map_red1 == 4'h7 && map_green1 == 4'h6 && map_blue1 == 4'h3) ||
-                         (map_red1 == 4'h5 && map_green1 == 4'h5 && map_blue1 == 4'h2));
+        is_collide_up = (map_red1 == 4'h7 && map_green1 == 4'h6 && map_blue1 == 4'h3);
 
         // Down collision
-        is_collide_down = ((map_red2 == 4'h7 && map_green2 == 4'h6 && map_blue2 == 4'h3) ||
-                           (map_red2 == 4'h5 && map_green2 == 4'h5 && map_blue2 == 4'h2));
+        is_collide_down = (map_red2 == 4'h7 && map_green2 == 4'h6 && map_blue2 == 4'h3);
 
         // Left collision
-        is_collide_left = ((map_red3 == 4'h7 && map_green3 == 4'h6 && map_blue3 == 4'h3) ||
-                           (map_red3 == 4'h5 && map_green3 == 4'h5 && map_blue3 == 4'h2));
+        is_collide_left = (map_red3 == 4'h7 && map_green3 == 4'h6 && map_blue3 == 4'h3);
 
         // Right collision
-        is_collide_right = ((map_red4 == 4'h7 && map_green4 == 4'h6 && map_blue4 == 4'h3) ||
-                            (map_red4 == 4'h5 && map_green4 == 4'h5 && map_blue4 == 4'h2));
+        is_collide_right = (map_red4 == 4'h7 && map_green4 == 4'h6 && map_blue4 == 4'h3);
 
         // Left end collision
-        is_collide_left_end = ((map_red5 == 4'h7 && map_green5 == 4'h6 && map_blue5 == 4'h3) ||
-                               (map_red5 == 4'h5 && map_green5 == 4'h5 && map_blue5 == 4'h2));
+        is_collide_left_end = (map_red5 == 4'h7 && map_green5 == 4'h6 && map_blue5 == 4'h3);
 
 //         Right end collision
-        is_collide_right_end = ((map_red6 == 4'h7 && map_green6 == 4'h6 && map_blue6 == 4'h3) ||
-                                (map_red6 == 4'h5 && map_green6 == 4'h5 && map_blue6 == 4'h2));
+        is_collide_right_end = (map_red6 == 4'h7 && map_green6 == 4'h6 && map_blue6 == 4'h3);
 
         // Left top collision
-        is_collide_left_top = ((map_red7 == 4'h7 && map_green7 == 4'h6 && map_blue7 == 4'h3) ||
-                               (map_red7 == 4'h5 && map_green7 == 4'h5 && map_blue7 == 4'h2));
+        is_collide_left_top = (map_red7 == 4'h7 && map_green7 == 4'h6 && map_blue7 == 4'h3);
 
         // Right top collision
-        is_collide_right_top = ((map_red8 == 4'h7 && map_green8 == 4'h6 && map_blue8 == 4'h3) ||
-                                (map_red8 == 4'h5 && map_green8 == 4'h5 && map_blue8 == 4'h2));
+        is_collide_right_top = (map_red8 == 4'h7 && map_green8 == 4'h6 && map_blue8 == 4'h3);
     end
 
 endmodule
