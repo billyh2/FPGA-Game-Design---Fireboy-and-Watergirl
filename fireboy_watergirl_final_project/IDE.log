@@ -612,3 +612,79 @@ con
 ----------------End of Script----------------
 
 20:55:50 INFO  : Disconnected from the channel tcfchan#5.
+17:37:48 DEBUG : Logs will be stored at 'C:/Users/Warre/fireboy_watergirl_final_project/IDE.log'.
+17:37:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Warre\fireboy_watergirl_final_project\temp_xsdb_launch_script.tcl
+17:37:51 INFO  : XSCT server has started successfully.
+17:37:51 INFO  : plnx-install-location is set to ''
+17:37:51 INFO  : Successfully done setting XSCT server connection channel  
+17:37:51 INFO  : Successfully done setting workspace for the tool. 
+17:37:51 INFO  : Platform repository initialization has completed.
+17:37:51 INFO  : Registering command handlers for Vitis TCF services
+17:37:54 INFO  : Successfully done query RDI_DATADIR 
+17:38:16 INFO  : Hardware specification for platform project 'mb_final_top' is updated.
+17:38:23 INFO  : Result from executing command 'removePlatformRepo': 
+17:38:27 INFO  : Result from executing command 'getProjects': mb_final_top
+17:38:27 INFO  : Result from executing command 'getPlatforms': 
+17:38:27 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+17:38:29 INFO  : The hardware specification used by project 'final' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+17:38:29 INFO  : The file 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream\mb_final_top.bit' stored in project is removed.
+17:38:29 INFO  : The file 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream\mb_final_top.mmi' stored in project is removed.
+17:38:29 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream' in project 'final'.
+17:38:55 DEBUG : Logs will be stored at 'C:/Users/Warre/fireboy_watergirl_final_project/IDE.log'.
+17:38:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Warre\fireboy_watergirl_final_project\temp_xsdb_launch_script.tcl
+17:38:57 INFO  : Platform repository initialization has completed.
+17:38:57 INFO  : XSCT server has started successfully.
+17:38:57 INFO  : Registering command handlers for Vitis TCF services
+17:38:57 INFO  : plnx-install-location is set to ''
+17:38:57 INFO  : Successfully done setting XSCT server connection channel  
+17:38:57 INFO  : Successfully done query RDI_DATADIR 
+17:38:57 INFO  : Successfully done setting workspace for the tool. 
+17:39:04 INFO  : Hardware specification for platform project 'mb_final_top' is updated.
+17:39:12 INFO  : Result from executing command 'removePlatformRepo': 
+17:39:15 INFO  : Result from executing command 'getProjects': mb_final_top
+17:39:15 INFO  : Result from executing command 'getPlatforms': 
+17:39:15 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+17:39:48 INFO  : Hardware specification for platform project 'mb_final_top' is updated.
+17:39:56 INFO  : Result from executing command 'removePlatformRepo': 
+17:39:59 INFO  : Result from executing command 'getProjects': mb_final_top
+17:39:59 INFO  : Result from executing command 'getPlatforms': 
+17:39:59 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+17:40:00 INFO  : The hardware specification used by project 'final' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+17:40:00 INFO  : The file 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+17:40:00 INFO  : The file 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+17:40:00 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Warre\fireboy_watergirl_final_project\final\_ide\bitstream' in project 'final'.
+17:40:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:40:04 INFO  : Jtag cable 'RealDigital Boo 887100000003A' is selected.
+17:40:04 INFO  : 'jtag frequency' command is executed.
+17:40:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:40:06 INFO  : Device configured successfully with "C:/Users/Warre/fireboy_watergirl_final_project/final/_ide/bitstream/mb_final_top.bit"
+17:40:06 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/Warre/fireboy_watergirl_final_project/mb_final_top/export/mb_final_top/hw/mb_final_top.xsa'.
+17:40:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:40:06 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:06 INFO  : System reset is completed.
+17:40:09 INFO  : 'after 3000' command is executed.
+17:40:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:09 INFO  : The application 'C:/Users/Warre/fireboy_watergirl_final_project/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+17:40:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000003A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Warre/fireboy_watergirl_final_project/final/_ide/bitstream/mb_final_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Warre/fireboy_watergirl_final_project/mb_final_top/export/mb_final_top/hw/mb_final_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Warre/fireboy_watergirl_final_project/final/Debug/final.elf
+----------------End of Script----------------
+
+17:40:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:09 INFO  : 'con' command is executed.
+17:40:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:40:09 INFO  : Disconnected from the channel tcfchan#5.

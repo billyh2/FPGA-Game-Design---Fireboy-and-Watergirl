@@ -1,0 +1,2 @@
+yellow_board_rom.v,verilog,xil_defaultlib,../../../../fireboy_watergirl_final_project.gen/sources_1/ip/yellow_board_rom/sim/yellow_board_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

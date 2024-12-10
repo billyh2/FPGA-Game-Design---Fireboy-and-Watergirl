@@ -61,7 +61,6 @@ map_rom your_instance_name (
   .dina(dina),    // input wire [3 : 0] dina
   .douta(douta),  // output wire [3 : 0] douta
   .clkb(clkb),    // input wire clkb
-  .enb(enb),      // input wire enb
   .web(web),      // input wire [0 : 0] web
   .addrb(addrb),  // input wire [14 : 0] addrb
   .dinb(dinb),    // input wire [3 : 0] dinb

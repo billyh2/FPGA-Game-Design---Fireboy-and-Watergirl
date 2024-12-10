@@ -1,4 +1,4 @@
-20:55:38 **** Build of configuration Debug for project final ****
+17:39:59 **** Build of configuration Debug for project final ****
 make all 
 'Building file: ../src/lw_usb/HID.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -87,5 +87,5 @@ mb-size final.elf  |tee "final.elf.size"
 'Finished building: final.elf.size'
 ' '
 
-20:55:39 Build Finished (took 946ms)
+17:40:00 Build Finished (took 955ms)
 
