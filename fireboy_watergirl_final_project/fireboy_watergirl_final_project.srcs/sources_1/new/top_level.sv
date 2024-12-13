@@ -51,6 +51,7 @@ module mb_final_top(
     logic [3:0] bg_red,bg_green,bg_blue;
     logic [3:0] map_red, map_green, map_blue;
     logic [3:0] wg_red, wg_green, wg_blue;
+    logic [3:0] fb_red, fb_green, fb_blue;
    
 //     logic [3:0] wg_base_red, wg_base_green, wg_base_blue;
 //     logic [3:0] wg_left1_red, wg_left1_green, wg_left1_blue;
@@ -63,6 +64,16 @@ module mb_final_top(
         logic [9:0] watergirlxsig, watergirlysig;
         logic is_watergirl;
         logic [3:0] state_display;
+        logic death_wg;
+        logic water_win;
+        
+    //Fireboy
+        logic [3:0] fireboy_status;
+        logic [9:0] fireboyxsig, fireboyysig;
+        logic is_fireboy;
+        logic death_fb;
+        logic fire_win;
+    
 
     //Purple Board
     logic [9:0] P_BoardX, P_BoardY;
@@ -85,11 +96,37 @@ module mb_final_top(
     //Purple button1
     logic is_purple_button_1;
     logic [3:0] p_button_red_1, p_button_green_1, p_button_blue_1;
+    logic Purple_Button_Down_1_fb, Purple_Button_Down_2_fb, Yellow_Button_Down_fb, PBoard_Collide_Up_fb, YBoard_Collide_Up_fb;
+    logic Purple_Button_Down_1_wg, Purple_Button_Down_2_wg, Yellow_Button_Down_wg, PBoard_Collide_Up_wg, YBoard_Collide_Up_wg;
     
     //Purple button2
     logic is_purple_button_2;
     logic [3:0] p_button_red_2, p_button_green_2, p_button_blue_2;
     
+    //blue diamonds
+    logic blue_eaten1, blue_eaten2, blue_eaten3;
+    logic [3:0] blue_diamond_1_red, blue_diamond_1_green, blue_diamond_1_blue;
+    logic [3:0] blue_diamond_2_red, blue_diamond_2_green, blue_diamond_2_blue;
+    logic [3:0] blue_diamond_3_red, blue_diamond_3_green, blue_diamond_3_blue;
+    logic is_blue_diamond_1, is_blue_diamond_2, is_blue_diamond_3;
+    logic [1:0] blue_counter;
+    
+    //red diamonds
+    logic is_red_diamond_1, is_red_diamond_2, is_red_diamond_3;
+    logic red_eaten1, red_eaten2, red_eaten3;
+    logic [3:0] red_diamond_1_red, red_diamond_1_green, red_diamond_1_blue;
+    logic [3:0] red_diamond_2_red, red_diamond_2_green, red_diamond_2_blue;
+    logic [3:0] red_diamond_3_red, red_diamond_3_green, red_diamond_3_blue;
+    logic [1:0] red_counter;
+    
+    //box
+    logic is_box;
+    logic [3:0] box_red, box_green, box_blue; 
+    logic [8:0] BoxX, BoxY;
+    logic pushing_left, pushing_right;
+    logic box_collide_left, box_collide_right;
+    logic box_collide_left_wg, box_collide_left_fb;
+    logic box_collide_right_wg, box_collide_right_fb;
     
     logic reset_ah;
     
@@ -120,6 +157,7 @@ module mb_final_top(
     
     //------------------------------------------Testing----------------------------------------------//
     logic [3:0] collision_hexA, collision_hexB;
+    logic PBoard_Collide_Down, PBoard_Collide_Right;
     
     // HexA displays
     assign collision_hexA[3] = is_collide_right;      // Digit 3
@@ -178,6 +216,36 @@ module mb_final_top(
         .wall_left(is_collide_left),
         .wall_right(is_collide_right),
         .wall_above(is_collide_up),
+        .Purple_Button_Down_1(Purple_Button_Down_1_wg), 
+        .Purple_Button_Down_2(Purple_Button_Down_2_wg), 
+        .Yellow_Button_Down(Yellow_Button_Down_wg), 
+        .PBoard_Collide_Up(PBoard_Collide_Up_wg), 
+        .YBoard_Collide_Up(YBoard_Collide_Up_wg),
+        .box_collide_left(box_collide_left_wg),
+        .box_collide_right(box_collide_right_wg),
+        .dead(death_wg),
+        .*
+    );
+    
+    fireboy fireboy (
+        .status           (status),
+        .DrawX            (drawX),
+        .DrawY            (drawY),
+        .Reset            (reset_ah),
+        .frame_clk        (vsync),
+        .clk_125MHz(clk_125MHz),
+        .fireboyX(fireboyxsig),
+        .fireboyY(fireboyysig),
+        .is_fireboy  (is_fireboy),
+        .keycode(keycode0_gpio[15:0]),
+        .Purple_Button_Down_1(Purple_Button_Down_1_fb), 
+        .Purple_Button_Down_2(Purple_Button_Down_2_fb), 
+        .Yellow_Button_Down(Yellow_Button_Down_fb), 
+        .PBoard_Collide_Up(PBoard_Collide_Up_fb), 
+        .YBoard_Collide_Up(YBoard_Collide_Up_fb),
+        .box_collide_left(box_collide_left_fb),
+        .box_collide_right(box_collide_right_fb),
+        .dead(death_fb),
         .*
     );
     
@@ -216,16 +284,33 @@ module mb_final_top(
         .Reset(reset_ah),
         .*
     );
+    
+    purple_button2 button2_purple (
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .frame_clk(vsync),
+        .Reset(reset_ah),
+        .*
+    );
+    
+    box box_instance (
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .frame_clk(vsync),
+        .Reset(reset_ah),
+        .*
+    );
 
     /*-------------------------------- Drawing*-------------------------------------*/
 
     game_logic game_state_machine (
         .Clk(vsync),
         .Reset(reset_ah),
-        .is_dead(1'b0),  // Connect to your collision detection
-        .is_win(1'b0),     // Connect to your win condition
+        .is_dead(is_dead),  // Connect to your collision detection
+        .is_win(is_win),     // Connect to your win condition
         .keycode(keycode0_gpio[7:0]),     // Connect to keyboard input
-        .status(status)              // Connect to status signal
+        .status(status),              // Connect to status signal
+        .*
     );
 
 
@@ -244,7 +329,7 @@ module mb_final_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({collision_hexA, collision_hexB, state_display, {1'b0, YBoard_Collide_Down, YBoard_Collide_Left,  Yellow_Button_Down}}),
+        .in({blue_counter, red_counter, state_display, {box_collide_left, 3'b000}}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -349,6 +434,8 @@ module mb_final_top(
         .map_blue(map_blue),
         .WatergirlX(watergirlxsig),
         .WatergirlY(watergirlysig),
+        .FireboyX(fireboyxsig),
+        .FireboyY(fireboyysig),
         .DrawX(drawX),
         .DrawY(drawY),
         .Red(red),
@@ -358,5 +445,10 @@ module mb_final_top(
         .frame_clk(vsync),
         .*
     );
+    
+    combinator combinator(
+        .*
+        );
+    
     
 endmodule

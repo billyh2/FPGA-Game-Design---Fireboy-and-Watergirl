@@ -7,13 +7,29 @@ module watergirl(
     input  logic [9:0]  DrawX, DrawY,
     input logic board_moving_up,
     input logic [9:0] Y_BoardX, Y_BoardY, P_BoardX, P_BoardY,
+    input logic [9:0] BoxX, BoxY,
+    output logic box_collide_left, box_collide_right,
     output  logic [9:0]  WatergirlX, WatergirlY,  // Current watergirl position
     output logic        is_watergirl,
     output logic [3:0] wg_red, wg_green, wg_blue,
+    
+    //diamond signals
+    output logic [3:0] blue_diamond_1_red, blue_diamond_1_green, blue_diamond_1_blue,
+    output logic [3:0] blue_diamond_2_red, blue_diamond_2_green, blue_diamond_2_blue,
+    output logic [3:0] blue_diamond_3_red, blue_diamond_3_green, blue_diamond_3_blue,
+    output logic blue_eaten1, blue_eaten2, blue_eaten3,
+    output logic is_blue_diamond_1, is_blue_diamond_2, is_blue_diamond_3,
+    output logic [1:0] blue_counter,
+    
+    
     output logic [3:0] watergirl_status,
     output logic on_ground, wall_above, wall_right, wall_left,
-    output logic Purple_Button_Down_1, Yellow_Button_Down, PBoard_Collide_Up, YBoard_Collide_Up,
-    output logic  [3:0] state_display
+    output logic Purple_Button_Down_1, Purple_Button_Down_2, Yellow_Button_Down, PBoard_Collide_Up, YBoard_Collide_Up,
+    
+        
+    output logic PBoard_Collide_Down, PBoard_Collide_Right, //testing
+    output logic dead,
+    output logic water_win
 );
     
     // FSM State Definition
@@ -25,17 +41,7 @@ module watergirl(
         DOWN
     } curr_state, next_state;
 
-        // Map FSM State to Hex Display Output
-    always_comb begin
-        case (curr_state)
-            IDLE:        state_display = 4'd0;  // IDLE
-            MOVE_LEFT:   state_display = 4'd1;  // MOVE_LEFT
-            MOVE_RIGHT:  state_display = 4'd2;  // MOVE_RIGHT
-            JUMP:        state_display = 4'd3;  // JUMP
-            DOWN:        state_display = 4'd4;  // DOWN
-            default:     state_display = 4'd0;  // Default to IDLE
-        endcase
-    end
+    
     
     // Internal Signals
     logic [9:0] watergirl_address;
@@ -95,10 +101,11 @@ module watergirl(
 //    logic YBoard_Collide_Up;
     logic  YBoard_Collide_Left;
     
+    logic box_is_collide_down;
     //Purple Board collision flags
-    logic PBoard_Collide_Down;
+//    logic PBoard_Collide_Down;
 //    logic PBoard_Collide_Up;
-    logic  PBoard_Collide_Right;
+//    logic  PBoard_Collide_Right;
         
     // Collision Checker Instance
     wall_checker collision (
@@ -110,6 +117,15 @@ module watergirl(
         .is_collide_down(on_ground),
         .is_collide_left(wall_left),
         .is_collide_right(wall_right),
+        .*
+    );
+    
+    death_checker_wg death (
+        .x_pos(WatergirlX),
+        .y_pos(WatergirlY),
+        .width(WatergirlWidth),
+        .height(WatergirlHeight),
+        .is_collide(dead),
         .*
     );
     
@@ -135,9 +151,29 @@ module watergirl(
         .*
     );
     
+    purple_button2_push pushing_p2 (
+        .x_pos(WatergirlX),
+        .y_pos(WatergirlY),
+        .*
+    );
+    
     yellow_button_push pushing_y (
         .x_pos(WatergirlX),
         .y_pos(WatergirlY),
+        .*
+    );
+    
+    blue_diamond (
+        .x_pos(WatergirlX),
+        .y_pos(WatergirlY),
+        .*
+    );
+    
+    box_collision box_collision_checker (
+        .x_pos(WatergirlX),
+        .y_pos(WatergirlY),
+        .width(20),
+        .height(40),
         .*
     );
     
@@ -145,6 +181,13 @@ module watergirl(
     int DistX, DistY;
     assign DistX = DrawX - WatergirlX;
     assign DistY = DrawY - WatergirlY;
+    
+    always_comb begin
+            if (WatergirlX >=582 && WatergirlX <= 605 && WatergirlY <=102)
+                water_win = 1;
+            else
+                water_win = 0;
+    end
     
     always_comb begin
 		  if ( DistX >= -10 && DistX <= 10 && DistY >= -20 && DistY <= 20) 
@@ -209,7 +252,7 @@ module watergirl(
                     next_state = JUMP;
                 end
                 
-                if(on_ground == 1'b0 && YBoard_Collide_Down == 1'b0 && PBoard_Collide_Down == 1'b0)
+                if(on_ground == 1'b0 && YBoard_Collide_Down == 1'b0 && PBoard_Collide_Down == 1'b0 && box_is_collide_down == 1'b0)
                     next_state = DOWN;
                 
                 if(PBoard_Collide_Down == 1'b1 && board_moving_up == 1'b1) 
@@ -220,7 +263,7 @@ module watergirl(
                 jumper_next = 10'd0;
                 Watergirl_Y_Motion_Next = 10'd0;
                 
-                if(wall_left == 1'b0 && YBoard_Collide_Left == 1'b0) begin
+                if(wall_left == 1'b0 && YBoard_Collide_Left == 1'b0 && box_collide_right == 1'b0) begin
                     Watergirl_X_Motion_Next = -10'd1;
                     
                     if(is_collide_left_end == 1'b1) begin //STAIRS
@@ -259,12 +302,16 @@ module watergirl(
                 if(board_moving_up == 1'b1 && PBoard_Collide_Down == 1'b1) begin
                     Watergirl_Y_Motion_Next = (~(1) + 1'b1);
                 end
+                if(box_collide_right == 1'b1) begin
+                    next_state = IDLE;
+                end
             end
 
             MOVE_RIGHT: begin
                 jumper_next = 10'd0;
+                Watergirl_Y_Motion_Next = 10'd0;
                 
-                if(wall_right == 1'b0) begin
+                if(wall_right == 1'b0 && PBoard_Collide_Right == 1'b0 && box_collide_left == 1'b0) begin
                     Watergirl_X_Motion_Next = 10'd1;
                     
                     if(is_collide_right_end == 1'b1) begin //STAIRS
@@ -303,6 +350,9 @@ module watergirl(
                 end
                 if(board_moving_up == 1'b1 && PBoard_Collide_Down == 1'b1) begin
                     Watergirl_Y_Motion_Next = (~(1) + 1'b1);
+                end
+                if(box_collide_left == 1'b1) begin
+                    next_state = IDLE;
                 end
             end
 
@@ -343,12 +393,16 @@ module watergirl(
                             Watergirl_X_Motion_Next = 10'd1;
                    end     
                end
+               
+               if(PBoard_Collide_Down == 1'b1 && board_moving_up == 1'b1) begin
+                    Watergirl_Y_Motion_Next = (~(1) + 1'b1);
+               end
            end
            
            DOWN: begin
                 jumper_next = 10'd0;
                 Watergirl_X_Motion_Next = 10'd0;
-                if(on_ground == 1'b0 && YBoard_Collide_Down == 1'b0 && PBoard_Collide_Down == 1'b0) begin
+                if(on_ground == 1'b0 && YBoard_Collide_Down == 1'b0 && PBoard_Collide_Down == 1'b0 && box_is_collide_down == 1'b0) begin
                     Watergirl_Y_Motion_Next = 10'd1;
                 end
                 else if(PBoard_Collide_Down == 1'b1 && board_moving_up == 1'b1) begin
@@ -364,7 +418,7 @@ module watergirl(
                     if ((keycode1 == 8'h04 || keycode2 == 8'h04) && wall_left == 1'b0 && YBoard_Collide_Left == 1'b0) begin
                             Watergirl_X_Motion_Next = (~(10'd1) + 1'b1);
                    end
-                   else if ((keycode1 == 8'h07 || keycode2 == 8'h07) && wall_right == 1'b0) begin
+                   else if ((keycode1 == 8'h07 || keycode2 == 8'h07) && wall_right == 1'b0 && PBoard_Collide_Right == 1'b0) begin
                             Watergirl_X_Motion_Next = 10'd1;
                    end     
                end

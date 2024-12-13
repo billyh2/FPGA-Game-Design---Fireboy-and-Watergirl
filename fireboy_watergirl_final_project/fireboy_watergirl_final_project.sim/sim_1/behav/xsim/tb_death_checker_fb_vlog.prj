@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/7698" --include "../../../../fireboy_watergirl_final_project.gen/sources_1/ip/clk_wiz_0" \
+"../../../../fireboy_watergirl_final_project.gen/sources_1/ip/fireboy_death_map_rom/sim/fireboy_death_map_rom.v" \
+
+sv xil_defaultlib  --include "../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ipshared/7698" --include "../../../../fireboy_watergirl_final_project.gen/sources_1/ip/clk_wiz_0" \
+"../../../../fireboy_watergirl_final_project.srcs/sources_1/new/death_checker_fb.sv" \
+"../../../../fireboy_watergirl_final_project.srcs/sim_1/new/diamonds test.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

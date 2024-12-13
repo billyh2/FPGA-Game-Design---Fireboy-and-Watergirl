@@ -61,8 +61,8 @@ module board_yellow(
 	       .blue(y_board_blue)
 	);
 	
-	parameter [9:0] Board_X_Center = 10'd57;
-	parameter [9:0] Board_Y_Center = 10'd259;
+	parameter [9:0] Board_X_Center = 10'd58;
+	parameter [9:0] Board_Y_Center = 10'd258;
 	
 	enum logic [7:0] {IDLE, DOWN1, DOWN2} curr_state, next_state;
 	

@@ -63,7 +63,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconcat_0_0 || ORIG_REF_NAME==design_1_xlconcat_0_0} -quiet] -quiet
 
-# IP: ip/map_rom/map_rom.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==map_rom || ORIG_REF_NAME==map_rom} -quiet] -quiet
+# IP: ip/red_diamond_rom/red_diamond_rom.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==red_diamond_rom || ORIG_REF_NAME==red_diamond_rom} -quiet] -quiet
+
+# IP: ip/blue_diamond_rom_1/blue_diamond_rom.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==blue_diamond_rom || ORIG_REF_NAME==blue_diamond_rom} -quiet] -quiet
+
+# IP: ip/watergirl_death_map_rom/watergirl_death_map_rom.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==watergirl_death_map_rom || ORIG_REF_NAME==watergirl_death_map_rom} -quiet] -quiet
 
 # XDC: c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/bd/design_1/design_1_ooc.xdc

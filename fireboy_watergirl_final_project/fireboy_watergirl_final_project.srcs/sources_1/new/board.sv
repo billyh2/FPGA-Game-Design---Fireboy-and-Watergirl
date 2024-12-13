@@ -122,7 +122,7 @@ module board_purple(
 	           else begin
 	               if(PBoard_Collide_Up == 1'b0) begin
 	                   Board_Y_Motion_Next = 10'd1;
-	                   if(BoardY == 10'd255) next_state = DOWN2;
+	                   if(BoardY == 10'd260) next_state = DOWN2;
 	               end
 	           end
 	           

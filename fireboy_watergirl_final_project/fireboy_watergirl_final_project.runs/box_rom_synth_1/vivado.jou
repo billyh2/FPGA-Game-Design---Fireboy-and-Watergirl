@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 12 23:33:58 2024
+# Process ID: 35724
+# Current directory: C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.runs/box_rom_synth_1
+# Command line: vivado.exe -log box_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source box_rom.tcl
+# Log file: C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.runs/box_rom_synth_1/box_rom.vds
+# Journal file: C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.runs/box_rom_synth_1\vivado.jou
+# Running On: Elinnation, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34185 MB
+#-----------------------------------------------------------
+source box_rom.tcl -notrace

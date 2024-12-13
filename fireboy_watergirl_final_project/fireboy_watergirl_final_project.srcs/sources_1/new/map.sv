@@ -12,7 +12,7 @@ module map(
 
     always_comb
     begin
-        if (status == 4'b0010)
+        if (status == 4'b0010 || status == 4'b0100 || status == 4'b1000)
         begin
             is_map = 1'b1;
 			map_address = ((DrawX * 5) / 16) + ((DrawY * 5) / 16) * 200;
@@ -29,9 +29,7 @@ module map(
             .wea(4'b0000),      // Write Enable for Port A
             .addra(map_address),  // Address bus for Port A
             .dina(4'b0000),   // Data input for Port A
-            .douta(index), // Data output for Port A
-            .web(4'b0000),
-            .doutb(4'b0000)
+            .douta(index) // Data output for Port A
     );  
     
     map_palette map_palette_instance (

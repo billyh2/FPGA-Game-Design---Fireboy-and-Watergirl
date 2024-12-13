@@ -1,0 +1,65 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_death_checker_fb.uut.d1.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_death_checker_fb.uut.d2.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_death_checker_fb.uut.d3.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_death_checker_fb.uut.d4.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+------------------------------------------------------------
+Time(ns)	X_Pos	Y_Pos	Width	Height	Is_Collide
+------------------------------------------------------------
+Time(ns): 0 | X_Pos: 150 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+Time(ns): 12000 | X_Pos: 160 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+13000		160	468	10	20	0
+Time(ns): 20000 | X_Pos: 170 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+21000		170	468	10	20	0
+Time(ns): 28000 | X_Pos: 180 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+29000		180	468	10	20	0
+Time(ns): 36000 | X_Pos: 190 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+37000		190	468	10	20	0
+Time(ns): 44000 | X_Pos: 200 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+45000		200	468	10	20	0
+Time(ns): 52000 | X_Pos: 210 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+53000		210	468	10	20	0
+Time(ns): 60000 | X_Pos: 220 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+61000		220	468	10	20	0
+Time(ns): 68000 | X_Pos: 230 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+69000		230	468	10	20	0
+Time(ns): 76000 | X_Pos: 240 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+77000		240	468	10	20	0
+Time(ns): 84000 | X_Pos: 250 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+85000		250	468	10	20	0
+Time(ns): 92000 | X_Pos: 260 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+93000		260	468	10	20	0
+Time(ns): 100000 | X_Pos: 270 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+101000		270	468	10	20	0
+Time(ns): 108000 | X_Pos: 280 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+109000		280	468	10	20	0
+Time(ns): 116000 | X_Pos: 290 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+117000		290	468	10	20	0
+Time(ns): 124000 | X_Pos: 300 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+125000		300	468	10	20	0
+Time(ns): 132000 | X_Pos: 310 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+133000		310	468	10	20	0
+Time(ns): 140000 | X_Pos: 320 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+141000		320	468	10	20	0
+Time(ns): 148000 | X_Pos: 330 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+149000		330	468	10	20	0
+Time(ns): 156000 | X_Pos: 340 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+157000		340	468	10	20	0
+Time(ns): 164000 | X_Pos: 350 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+Time(ns): 164000 | X_Pos: 350 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
+165000		350	468	10	20	1
+Time(ns): 172000 | X_Pos: 360 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
+173000		360	468	10	20	1
+Time(ns): 180000 | X_Pos: 370 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
+181000		370	468	10	20	1
+Time(ns): 188000 | X_Pos: 380 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
+189000		380	468	10	20	1
+Time(ns): 196000

@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 7
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -98,22 +97,45 @@ add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/girl_left2/girl_le
 add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/girl_right1/girl_right1.COE
 add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/board/board.COE
 add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/mapp/mapp.COE
-add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/mapp123/mapp123.COE
 add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/background123/background123.COE
-add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/yellowboard/goat.COE
-add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/button/button.COE
-add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/button_yellow/niggothy.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/yellowboard/goat.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/button/button.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/button_yellow/niggothy.COE
+add_files C:/Users/Warre/Downloads/cock/boy/boy.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/boy/boy.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/boy_left1/boy_left1.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/boy_left2/boy_left2.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/boy_right1/boy_right1.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/boy_right2/boy_right2.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/mapgger/blacked.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/mapp123/mapp.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/girl_right2/girl_right2.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/blue/blue.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/red2/red2.COE
+add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/box/block.COE
+add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/watergirl_death_map/watergirl_death_map.COE
+add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/fireboy_death_map/fireboy_death_map.COE
 read_verilog -library xil_defaultlib -sv {
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/imports/src/VGA_controller.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/board.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/box.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/box_collision.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/collision.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/color_mapper.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/combinator.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/death_checker.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/death_checker_fb.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/diamonds.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/fireboy.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/game_state.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/hex_driver.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/map.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/purple_board_collision.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/purple_button.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/purple_button1_push.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/purple_button2.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/purple_button_push_1.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/red_diamond.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/start_background.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/watergirl.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/yellow_board.sv
@@ -164,8 +186,14 @@ set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0_1/data/mb_bootloop_le.elf]
 
-read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/map_rom/map_rom.xci
-set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/map_rom/map_rom_ooc.xdc]
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/red_diamond_rom/red_diamond_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/red_diamond_rom/red_diamond_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/blue_diamond_rom_1/blue_diamond_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/blue_diamond_rom_1/blue_diamond_rom_ooc.xdc]
+
+read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/watergirl_death_map_rom/watergirl_death_map_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/watergirl_death_map_rom/watergirl_death_map_rom_ooc.xdc]
 
 read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
 
@@ -195,14 +223,41 @@ set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy
 read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/board_rom/board_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/board_rom/board_rom_ooc.xdc]
 
-read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/yellow_board_rom/yellow_board_rom.xci
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/yellow_board_rom/yellow_board_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/yellow_board_rom/yellow_board_rom_ooc.xdc]
 
-read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/purple_button_rom/purple_button_rom.xci
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/purple_button_rom/purple_button_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/purple_button_rom/purple_button_rom_ooc.xdc]
 
-read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/yellow_button_rom/yellow_button_rom.xci
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/yellow_button_rom/yellow_button_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/yellow_button_rom/yellow_button_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/boy_rom/boy_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/boy_rom/boy_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/boy_left2_rom/boy_left2_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/boy_left2_rom/boy_left2_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/boy_right1_rom/boy_right1_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/boy_right1_rom/boy_right1_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/boy_right2_rom/boy_right2_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/boy_right2_rom/boy_right2_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/blacked_map_rom/blacked_map_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/blacked_map_rom/blacked_map_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/map_rom_2/map_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/map_rom_2/map_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/boy_left1_rom/boy_left1_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/boy_left1_rom/boy_left1_rom_ooc.xdc]
+
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/box_rom/box_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/box_rom/box_rom_ooc.xdc]
+
+read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/fireboy_death_map_rom/fireboy_death_map_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/fireboy_death_map_rom/fireboy_death_map_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

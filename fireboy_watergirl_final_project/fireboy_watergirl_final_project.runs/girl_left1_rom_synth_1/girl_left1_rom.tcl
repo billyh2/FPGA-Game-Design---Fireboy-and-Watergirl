@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "girl_left1_rom_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 7
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -92,7 +92,7 @@ set_property ip_output_repo c:/Users/Warre/fireboy_watergirl_final_project/fireb
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/girl_left1_rom/girl_left1_rom.xci
+read_ip -quiet C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/girl_left1_rom/girl_left1_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/girl_left1_rom/girl_left1_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }

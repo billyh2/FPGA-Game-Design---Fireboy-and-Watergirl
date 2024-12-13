@@ -29,23 +29,23 @@ module purple_board_collision(
     output logic  PBoard_Collide_Right
     );
     
-    logic [9:0] x_left;
-    logic [9:0] x_right;
-    logic [9:0] y_top;
-    logic [9:0] y_bot;
-
-    assign x_left  = x_pos - width/2;
-    assign x_right = x_pos + width/2;
-    assign y_top   = x_pos - height/2;
-    assign y_bot   = x_pos + height/2;
+        logic [9:0] x_left;
+        logic [9:0] x_right;
+        logic [9:0] y_top;
+        logic [9:0] y_bot;
+    
+        assign x_left  = x_pos - width/2;
+        assign x_right = x_pos + width/2;
+        assign y_top   = y_pos - height/2;
+        assign y_bot   = y_pos + height/2;
     
     always_comb begin
-        if(x_pos >= P_BoardX-45 && x_pos <= P_BoardX+45 && y_bot >= P_BoardY+5 && y_bot <= P_BoardY+6) 
+        if(x_pos >= P_BoardX-40 && x_pos <= P_BoardX+45 && y_bot >= P_BoardY-7 && y_bot <= P_BoardY-4) 
             PBoard_Collide_Down = 1'b1;
         else 
             PBoard_Collide_Down = 1'b0;
         
-        if(x_pos >= P_BoardX-45 && x_pos <= P_BoardX+45 && y_top >= P_BoardY-7 && y_top <= P_BoardY-4) 
+        if(x_pos >= P_BoardX-40 && x_pos <= P_BoardX+45 && y_top >= P_BoardY+5 && y_top <= P_BoardY+6) 
             PBoard_Collide_Up = 1'b1;
         else 
             PBoard_Collide_Up = 1'b0;

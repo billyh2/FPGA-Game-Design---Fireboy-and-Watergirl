@@ -1,0 +1,2 @@
+boy_left1_rom.v,verilog,xil_defaultlib,../../../../fireboy_watergirl_final_project.gen/sources_1/ip/boy_left1_rom/sim/boy_left1_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

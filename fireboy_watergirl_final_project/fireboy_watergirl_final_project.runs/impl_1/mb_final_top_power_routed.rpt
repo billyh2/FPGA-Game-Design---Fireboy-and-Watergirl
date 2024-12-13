@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Mon Dec  9 18:41:12 2024
+| Date             : Fri Dec 13 13:45:19 2024
 | Host             : Elinnation running 64-bit major release  (build 9200)
 | Command          : report_power -file mb_final_top_power_routed.rpt -pb mb_final_top_power_summary_routed.pb -rpx mb_final_top_power_routed.rpx
 | Design           : mb_final_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.604        |
+| Total On-Chip Power (W)  | 0.670        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.525        |
+| Dynamic (W)              | 0.591        |
 | Device Static (W)        | 0.079        |
 | Effective TJA (C/W)      | 4.9          |
-| Max Ambient (C)          | 82.0         |
-| Junction Temperature (C) | 28.0         |
+| Max Ambient (C)          | 81.7         |
+| Junction Temperature (C) | 28.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.018 |       12 |       --- |             --- |
-| Slice Logic              |     0.016 |     9023 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     3488 |     32600 |           10.70 |
+| Clocks                   |     0.019 |       12 |       --- |             --- |
+| Slice Logic              |     0.041 |    11890 |       --- |             --- |
+|   LUT as Logic           |     0.037 |     5268 |     32600 |           16.16 |
+|   CARRY4                 |     0.003 |      695 |      8150 |            8.53 |
 |   LUT as Distributed RAM |     0.001 |      172 |      9600 |            1.79 |
-|   CARRY4                 |     0.001 |      329 |      8150 |            4.04 |
-|   Register               |    <0.001 |     3046 |     65200 |            4.67 |
-|   F7/F8 Muxes            |    <0.001 |       36 |     32600 |            0.11 |
+|   Register               |    <0.001 |     3184 |     65200 |            4.88 |
+|   F7/F8 Muxes            |    <0.001 |       45 |     32600 |            0.14 |
 |   LUT as Shift Register  |    <0.001 |      112 |      9600 |            1.17 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |      973 |       --- |             --- |
-| Signals                  |     0.024 |     6456 |       --- |             --- |
-| Block RAM                |     0.109 |     71.5 |        75 |           95.33 |
+|   Others                 |     0.000 |     1015 |       --- |             --- |
+| Signals                  |     0.049 |     8699 |       --- |             --- |
+| Block RAM                |     0.110 |       74 |        75 |           98.67 |
 | MMCM                     |     0.212 |        2 |         5 |           40.00 |
-| DSPs                     |     0.003 |       10 |       120 |            8.33 |
-| I/O                      |     0.143 |       42 |       210 |           20.00 |
+| DSPs                     |     0.018 |       25 |       120 |           20.83 |
+| I/O                      |     0.141 |       42 |       210 |           20.00 |
 | Static Power             |     0.079 |          |           |                 |
-| Total                    |     0.604 |          |           |                 |
+| Total                    |     0.670 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,10 +78,10 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.174 |       0.162 |      0.012 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.242 |       0.230 |      0.013 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.130 |       0.118 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
-| Vcco25    |       2.500 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -150,64 +150,103 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------+-----------+
-| Name                           | Power (W) |
-+--------------------------------+-----------+
-| mb_final_top                   |     0.525 |
-|   bkg                          |     0.017 |
-|     background_rom             |     0.017 |
-|       U0                       |     0.017 |
-|   button1_purple               |     0.002 |
-|     purple_button_rom_instance |     0.002 |
-|       U0                       |     0.002 |
-|   button_yellow                |     0.002 |
-|     yellow_button_rom_instance |     0.002 |
-|       U0                       |     0.002 |
-|   clk_wiz                      |     0.106 |
-|     inst                       |     0.106 |
-|   m                            |     0.009 |
-|     m_rom                      |     0.009 |
-|       U0                       |     0.009 |
-|   mb_block_i                   |     0.137 |
-|     clk_wiz_1                  |     0.106 |
-|       inst                     |     0.106 |
-|     gpio_usb_int               |     0.002 |
-|       U0                       |     0.002 |
-|     gpio_usb_keycode           |     0.001 |
-|       U0                       |     0.001 |
-|     microblaze_0               |     0.017 |
-|       U0                       |     0.017 |
-|     microblaze_0_axi_intc      |     0.001 |
-|       U0                       |     0.001 |
-|     microblaze_0_axi_periph    |     0.001 |
-|       xbar                     |     0.001 |
-|     spi_usb                    |     0.004 |
-|       U0                       |     0.004 |
-|     timer_usb_axi              |     0.002 |
-|       U0                       |     0.002 |
-|   purple_board                 |     0.004 |
-|     purple_board               |     0.001 |
-|       U0                       |     0.001 |
-|   vga                          |     0.001 |
-|   vga_to_hdmi                  |     0.133 |
-|     inst                       |     0.133 |
-|   watergirl                    |     0.095 |
-|     collision                  |     0.084 |
-|       d1                       |     0.019 |
-|       d2                       |     0.019 |
-|       d3                       |     0.019 |
-|       d4                       |     0.019 |
-|     watergirl_rom              |     0.001 |
-|       U0                       |     0.001 |
-|     watergirl_rom_left2        |     0.001 |
-|       U0                       |     0.001 |
-|     watergirl_rom_right1       |     0.001 |
-|       U0                       |     0.001 |
-|     watergirl_rom_right2       |     0.001 |
-|       U0                       |     0.001 |
-|   yellow_board                 |     0.004 |
-|     yellow_board_rom           |     0.001 |
-|       U0                       |     0.001 |
-+--------------------------------+-----------+
++-----------------------------------+-----------+
+| Name                              | Power (W) |
++-----------------------------------+-----------+
+| mb_final_top                      |     0.591 |
+|   bkg                             |     0.017 |
+|     background_rom                |     0.017 |
+|       U0                          |     0.017 |
+|   box_instance                    |     0.023 |
+|     box_rom_instance              |     0.001 |
+|       U0                          |     0.001 |
+|     collision                     |     0.012 |
+|       d1                          |     0.002 |
+|       d2                          |     0.005 |
+|   button1_purple                  |     0.002 |
+|     purple_button_rom_instance    |     0.002 |
+|       U0                          |     0.002 |
+|   button2_purple                  |     0.002 |
+|     purple_button_rom_instance    |     0.002 |
+|       U0                          |     0.002 |
+|   button_yellow                   |     0.002 |
+|     yellow_button_rom_instance    |     0.002 |
+|       U0                          |     0.002 |
+|   clk_wiz                         |     0.106 |
+|     inst                          |     0.106 |
+|   fireboy                         |     0.066 |
+|     collision                     |     0.031 |
+|       d1                          |     0.005 |
+|       d2                          |     0.005 |
+|       d3                          |     0.005 |
+|       d4                          |     0.005 |
+|     death                         |     0.009 |
+|       d1                          |     0.005 |
+|     fireboy_rom                   |     0.001 |
+|       U0                          |     0.001 |
+|     fireboy_rom_left1             |     0.001 |
+|       U0                          |     0.001 |
+|     fireboy_rom_left2             |     0.001 |
+|       U0                          |     0.001 |
+|     fireboy_rom_right1            |     0.001 |
+|       U0                          |     0.001 |
+|     fireboy_rom_right2            |     0.001 |
+|       U0                          |     0.001 |
+|     nolabel_line178               |     0.010 |
+|       red_diamond_rom_1_instance  |     0.002 |
+|       red_diamond_rom_2_instance  |     0.002 |
+|       red_diamond_rom_3_instance  |     0.002 |
+|   m                               |     0.009 |
+|     m_rom                         |     0.009 |
+|       U0                          |     0.009 |
+|   mb_block_i                      |     0.138 |
+|     clk_wiz_1                     |     0.106 |
+|       inst                        |     0.106 |
+|     gpio_usb_int                  |     0.002 |
+|       U0                          |     0.002 |
+|     gpio_usb_keycode              |     0.001 |
+|       U0                          |     0.001 |
+|     microblaze_0                  |     0.018 |
+|       U0                          |     0.018 |
+|     microblaze_0_axi_intc         |     0.001 |
+|       U0                          |     0.001 |
+|     microblaze_0_axi_periph       |     0.001 |
+|       xbar                        |     0.001 |
+|     spi_usb                       |     0.004 |
+|       U0                          |     0.004 |
+|     timer_usb_axi                 |     0.002 |
+|       U0                          |     0.002 |
+|   purple_board                    |     0.008 |
+|     purple_board                  |     0.001 |
+|       U0                          |     0.001 |
+|   vga                             |     0.002 |
+|   vga_to_hdmi                     |     0.133 |
+|     inst                          |     0.133 |
+|   watergirl                       |     0.062 |
+|     collision                     |     0.032 |
+|       d1                          |     0.005 |
+|       d2                          |     0.005 |
+|       d3                          |     0.005 |
+|       d4                          |     0.005 |
+|     death                         |     0.005 |
+|       d1                          |     0.002 |
+|     nolabel_line166               |     0.009 |
+|       blue_diamond_rom_1_instance |     0.002 |
+|       blue_diamond_rom_2_instance |     0.002 |
+|       blue_diamond_rom_3_instance |     0.002 |
+|     watergirl_rom                 |     0.001 |
+|       U0                          |     0.001 |
+|     watergirl_rom_left1           |     0.001 |
+|       U0                          |     0.001 |
+|     watergirl_rom_left2           |     0.001 |
+|       U0                          |     0.001 |
+|     watergirl_rom_right1          |     0.001 |
+|       U0                          |     0.001 |
+|     watergirl_rom_right2          |     0.001 |
+|       U0                          |     0.001 |
+|   yellow_board                    |     0.007 |
+|     yellow_board_rom              |     0.001 |
+|       U0                          |     0.001 |
++-----------------------------------+-----------+
 
 

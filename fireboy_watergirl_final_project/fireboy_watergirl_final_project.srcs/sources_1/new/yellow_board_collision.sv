@@ -40,12 +40,12 @@ module yellow_board_collision(
     assign y_bot   = y_pos + height/2;
     
     always_comb begin
-        if(x_pos >= Y_BoardX-45 && x_pos <= Y_BoardX+45 && y_bot >= Y_BoardY-7 && y_bot <= Y_BoardY - 5) 
+        if(x_pos >= Y_BoardX-45 && x_pos <= Y_BoardX+40 && y_bot >= Y_BoardY-7 && y_bot <= Y_BoardY - 5) //Character above board
             YBoard_Collide_Down = 1'b1;
         else 
             YBoard_Collide_Down = 1'b0;
         
-        if(x_pos >= Y_BoardX-45 && x_pos <= Y_BoardX+45 && y_top >= Y_BoardY+7 && y_top <= Y_BoardY + 7) 
+        if(x_pos >= Y_BoardX-45 && x_pos <= Y_BoardX+40 && y_top >= Y_BoardY+5 && y_top <= Y_BoardY +7)  //Character under board
             YBoard_Collide_Up = 1'b1;
         else 
             YBoard_Collide_Up = 1'b0;

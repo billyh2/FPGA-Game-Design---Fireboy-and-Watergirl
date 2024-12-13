@@ -59,16 +59,16 @@ module wall_checker(
     assign addr_left      = (x_left * 5/16) + (y_pos * 5/16 * 200);
     assign addr_right     = (x_right * 5/16) + (y_pos * 5/16 * 200);
 
-    assign addr_left_end  = ((x_pos - 8) * 5/16) + ((y_bot) * 5/16 * 200);
-    assign addr_right_end = ((x_pos + 8) * 5/16) + ((y_bot) * 5/16 * 200);
-    assign addr_left_top  = ((x_pos - 8) * 5/16) + ((y_top) * 5/16 * 200);
-    assign addr_right_top = ((x_pos + 8) * 5/16) + ((y_top) * 5/16 * 200);
+    assign addr_left_end  = ((x_pos - 8) * 5/16) + ((y_bot-4) * 5/16 * 200);
+    assign addr_right_end = ((x_pos + 8) * 5/16) + ((y_bot-4) * 5/16 * 200);
+    assign addr_left_top  = ((x_pos - 8) * 5/16) + ((y_top+4) * 5/16 * 200);
+    assign addr_right_top = ((x_pos + 8) * 5/16) + ((y_top+4) * 5/16 * 200);
 
     // Indices from map_rom
     logic [3:0] index1, index2, index3, index4, index5, index6, index7, index8;
 
     // map_rom instances for each position
-    map_rom d1(
+    blacked_map_rom d1(
         .clka(clk_125MHz),
         .wea(4'b0000),
         .addra(addr_top),
@@ -81,7 +81,7 @@ module wall_checker(
         .doutb(index2)
     );
 
-    map_rom d2(
+    blacked_map_rom d2(
         .clka(clk_125MHz),
         .wea(4'b0000),
         .addra(addr_left),
@@ -94,7 +94,7 @@ module wall_checker(
         .doutb(index4)
     );
 
-    map_rom d3(
+    blacked_map_rom d3(
         .clka(clk_125MHz),
         .wea(4'b0000),
         .addra(addr_left_end),
@@ -107,7 +107,7 @@ module wall_checker(
         .doutb(index6)
     );
 
-    map_rom d4(
+    blacked_map_rom d4(
         .clka(clk_125MHz),
         .wea(4'b0000),
         .addra(addr_left_top),
@@ -131,45 +131,41 @@ module wall_checker(
     logic [3:0] map_red7, map_green7, map_blue7;
     logic [3:0] map_red8, map_green8, map_blue8;
 
-    map_palette mp1(.index(index1), .red(map_red1), .green(map_green1), .blue(map_blue1));
-    map_palette mp2(.index(index2), .red(map_red2), .green(map_green2), .blue(map_blue2));
-    map_palette mp3(.index(index3), .red(map_red3), .green(map_green3), .blue(map_blue3));
-    map_palette mp4(.index(index4), .red(map_red4), .green(map_green4), .blue(map_blue4));
-    map_palette mp5(.index(index5), .red(map_red5), .green(map_green5), .blue(map_blue5));
-    map_palette mp6(.index(index6), .red(map_red6), .green(map_green6), .blue(map_blue6));
-    map_palette mp7(.index(index7), .red(map_red7), .green(map_green7), .blue(map_blue7));
-    map_palette mp8(.index(index8), .red(map_red8), .green(map_green8), .blue(map_blue8));
+    blacked_map_palette mp1(.index(index1), .red(map_red1), .green(map_green1), .blue(map_blue1));
+    blacked_map_palette mp2(.index(index2), .red(map_red2), .green(map_green2), .blue(map_blue2));
+    blacked_map_palette mp3(.index(index3), .red(map_red3), .green(map_green3), .blue(map_blue3));
+    blacked_map_palette mp4(.index(index4), .red(map_red4), .green(map_green4), .blue(map_blue4));
+    blacked_map_palette mp5(.index(index5), .red(map_red5), .green(map_green5), .blue(map_blue5));
+    blacked_map_palette mp6(.index(index6), .red(map_red6), .green(map_green6), .blue(map_blue6));
+    blacked_map_palette mp7(.index(index7), .red(map_red7), .green(map_green7), .blue(map_blue7));
+    blacked_map_palette mp8(.index(index8), .red(map_red8), .green(map_green8), .blue(map_blue8));
 
-    // Known wall colors: (7,6,3) or (5,5,2)
-    // We'll consider a pixel a wall if it matches either of these two sets of RGB.
+    // Known wall colors: (F, F, F)
+    // We'll consider a pixel a wall if it matches white sets of RGB.
 
     always_comb begin
-        // Up collision
-        is_collide_up = (map_red1 == 4'h5 && map_green1 == 4'h5 && map_blue1 == 4'h2) || (map_red1 == 4'h7 && map_green1 == 4'h6 && map_blue1 == 4'h3);
+        is_collide_up = (map_red1 == 4'hF && map_green1 == 4'hF && map_blue1 == 4'hF);
+        is_collide_down = (map_red2 == 4'hF && map_green2 == 4'hF && map_blue2 == 4'hF);
+        is_collide_left = (map_red3 == 4'hF && map_green3 == 4'hF && map_blue3 == 4'hF);
+        is_collide_right = (map_red4 == 4'hF && map_green4 == 4'hF && map_blue4 == 4'hF);
+        is_collide_left_end = (map_red5 == 4'hF && map_green5 == 4'hF && map_blue5 == 4'hF);
+        is_collide_right_end = (map_red6 == 4'hF && map_green6 == 4'hF && map_blue6 == 4'hF);
+        is_collide_left_top = (map_red7 == 4'hF && map_green7 == 4'hF && map_blue7 == 4'hF);
+        is_collide_right_top = (map_red8 == 4'hF && map_green8 == 4'hF && map_blue8 == 4'hF);
+end
 
-        // Down collision
-        is_collide_down = (map_red2 == 4'h5 && map_green2 == 4'h5 && map_blue2 == 4'h2) || (map_red2 == 4'h7 && map_green2 == 4'h6 && map_blue2 == 4'h3);
-        // Left collision
-        is_collide_left = (map_red3 == 4'h5 && map_green3 == 4'h5 && map_blue3 == 4'h2) || (map_red3 == 4'h7 && map_green3 == 4'h6 && map_blue3 == 4'h3);
+endmodule
 
-        // Right collision
-        is_collide_right = (map_red4 == 4'h5 && map_green4 == 4'h5 && map_blue4 == 4'h2) || (map_red4 == 4'h7 && map_green4 == 4'h6 && map_blue4 == 4'h3);
+module blacked_map_palette (
+	input logic [0:0] index,
+	output logic [3:0] red, green, blue
+);
 
-        // Left end collision
-        is_collide_left_end = ((map_red5 == 4'h7 && map_green5 == 4'h6 && map_blue5 == 4'h3) ||
-                               (map_red5 == 4'h5 && map_green5 == 4'h5 && map_blue5 == 4'h2));
+localparam [0:1][11:0] palette = {
+	{4'h0, 4'h0, 4'h0},
+	{4'hF, 4'hF, 4'hF}
+};
 
-//         Right end collision
-        is_collide_right_end = ((map_red6 == 4'h7 && map_green6 == 4'h6 && map_blue6 == 4'h3) ||
-                                (map_red6 == 4'h5 && map_green6 == 4'h5 && map_blue6 == 4'h2));
-
-        // Left top collision
-        is_collide_left_top = ((map_red7 == 4'h7 && map_green7 == 4'h6 && map_blue7 == 4'h3) ||
-                               (map_red7 == 4'h5 && map_green7 == 4'h5 && map_blue7 == 4'h2));
-
-        // Right top collision
-        is_collide_right_top = ((map_red8 == 4'h7 && map_green8 == 4'h6 && map_blue8 == 4'h3) ||
-                                (map_red8 == 4'h5 && map_green8 == 4'h5 && map_blue8 == 4'h2));
-    end
+assign {red, green, blue} = palette[index];
 
 endmodule
