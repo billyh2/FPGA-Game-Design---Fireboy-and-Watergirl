@@ -29,10 +29,13 @@ module color_mapper (
     input logic [3:0] red_diamond_1_red, red_diamond_1_green, red_diamond_1_blue,
     input logic [3:0] red_diamond_2_red, red_diamond_2_green, red_diamond_2_blue,
     input logic [3:0] red_diamond_3_red, red_diamond_3_green, red_diamond_3_blue,
+    input logic [3:0] gameover_red, gameover_green, gameover_blue,
+    input logic [3:0] win_red, win_green, win_blue,
     
     output logic [3:0] Red, Green, Blue
 );
-
+    
+    
     always_comb begin
         case (status)
             4'b0001: begin // START
@@ -122,19 +125,43 @@ module color_mapper (
             
             4'b0100: begin // WIN
                 // Add win screen colors
-                // Add win screen colors
-                Red   = map_red;
-                Green = map_green;
-                Blue  = map_blue;
-                
+                if ({win_red, win_green, win_blue} != 12'h000) begin
+                    Red = win_red;
+                    Green = win_green;
+                    Blue = win_blue;
+                end
+                else if (is_fireboy && {fb_red, fb_green, fb_blue} != 12'hFFF) begin
+                    Red   = fb_red;
+                    Green = fb_green;
+                    Blue  = fb_blue;
+                end
+                else if (is_watergirl && {wg_red, wg_green, wg_blue} != 12'hFFF) begin
+                    Red   = wg_red;
+                    Green = wg_green;
+                    Blue  = wg_blue;
+                end
+                else 
+                begin
+                    Red   = map_red;
+                    Green = map_green;
+                    Blue  = map_blue;
+                end
             end
             
             4'b1000: begin // LOSE
                 // Add lose screen colors
-                Red   = map_red;
-                Green = map_green;
-                Blue  = map_blue;
+                if ({gameover_red, gameover_green, gameover_blue} != 12'h000) begin
+                    Red = gameover_red;
+                    Green = gameover_green;
+                    Blue = gameover_blue;
+                end
                 
+                else 
+                begin
+                    Red   = map_red;
+                    Green = map_green;
+                    Blue  = map_blue;
+                end
             end
             
             default: begin
@@ -145,3 +172,4 @@ module color_mapper (
         endcase
     end
 endmodule
+

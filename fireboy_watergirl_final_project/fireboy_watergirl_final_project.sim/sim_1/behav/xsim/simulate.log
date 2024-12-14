@@ -62,4 +62,41 @@ Time(ns): 180000 | X_Pos: 370 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide
 181000		370	468	10	20	1
 Time(ns): 188000 | X_Pos: 380 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
 189000		380	468	10	20	1
-Time(ns): 196000
+Time(ns): 196000 | X_Pos: 390 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 1
+Time(ns): 196000 | X_Pos: 390 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+197000		390	468	10	20	0
+Time(ns): 204000 | X_Pos: 400 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+205000		400	468	10	20	0
+Time(ns): 212000 | X_Pos: 410 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+213000		410	468	10	20	0
+Time(ns): 220000 | X_Pos: 420 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+221000		420	468	10	20	0
+Time(ns): 228000 | X_Pos: 430 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+229000		430	468	10	20	0
+Time(ns): 236000 | X_Pos: 440 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+237000		440	468	10	20	0
+Time(ns): 244000 | X_Pos: 450 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+245000		450	468	10	20	0
+Time(ns): 252000 | X_Pos: 460 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+253000		460	468	10	20	0
+Time(ns): 260000 | X_Pos: 470 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+261000		470	468	10	20	0
+Time(ns): 268000 | X_Pos: 480 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+269000		480	468	10	20	0
+Time(ns): 276000 | X_Pos: 490 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+277000		490	468	10	20	0
+Time(ns): 284000 | X_Pos: 500 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+285000		500	468	10	20	0
+Time(ns): 292000 | X_Pos: 510 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+293000		510	468	10	20	0
+Time(ns): 300000 | X_Pos: 520 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+301000		520	468	10	20	0
+Time(ns): 308000 | X_Pos: 530 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+309000		530	468	10	20	0
+Time(ns): 316000 | X_Pos: 540 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+317000		540	468	10	20	0
+Time(ns): 324000 | X_Pos: 550 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+325000		550	468	10	20	0
+Time(ns): 332000 | X_Pos: 560 | Y_Pos: 468 | Width: 10 | Height: 20 | Is_Collide: 0
+333000		560	468	10	20	0
+$finish called at time : 433 ns : File "C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sim_1/new/diamonds test.sv" Line 94

@@ -115,6 +115,8 @@ add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/red2/red2.COE
 add_files C:/Users/Warre/fireboy_watergirl_final_project/cock/box/block.COE
 add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/watergirl_death_map/watergirl_death_map.COE
 add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/fireboy_death_map/fireboy_death_map.COE
+add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/gameover/gameover.COE
+add_files c:/Users/Warre/fireboy_watergirl_final_project/cock/win/win.COE
 read_verilog -library xil_defaultlib -sv {
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/imports/src/VGA_controller.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/board.sv
@@ -123,6 +125,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/collision.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/color_mapper.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/combinator.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/death.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/death_checker.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/death_checker_fb.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/diamonds.sv
@@ -138,6 +141,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/red_diamond.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/start_background.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/watergirl.sv
+  C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/win.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/yellow_board.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/yellow_board_collision.sv
   C:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/new/yellow_button.sv
@@ -258,6 +262,12 @@ set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy
 
 read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/fireboy_death_map_rom/fireboy_death_map_rom.xci
 set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/fireboy_death_map_rom/fireboy_death_map_rom_ooc.xdc]
+
+read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/gameover_rom/gameover_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/gameover_rom/gameover_rom_ooc.xdc]
+
+read_ip -quiet c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.srcs/sources_1/ip/win_rom/win_rom.xci
+set_property used_in_implementation false [get_files -all c:/Users/Warre/fireboy_watergirl_final_project/fireboy_watergirl_final_project.gen/sources_1/ip/win_rom/win_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

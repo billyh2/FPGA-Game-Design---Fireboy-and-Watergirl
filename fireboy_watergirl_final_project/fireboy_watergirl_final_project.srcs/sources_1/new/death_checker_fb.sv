@@ -80,8 +80,8 @@ module death_checker_fb(
     // Known wall colors: (F, F, F)
     // We'll consider a pixel a wall if it matches white sets of RGB.
     logic is_collide_left_end;
-    logic is_collide_right_end;
-    
+        logic is_collide_right_end;
+        
     always_comb begin
         is_collide_left_end = (map_red1 == 4'hF && map_green1 == 4'hF && map_blue1 == 4'hF);
         is_collide_right_end = (map_red2 == 4'hF && map_green2 == 4'hF && map_blue2 == 4'hF);

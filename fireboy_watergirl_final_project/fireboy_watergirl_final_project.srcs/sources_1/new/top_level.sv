@@ -52,6 +52,8 @@ module mb_final_top(
     logic [3:0] map_red, map_green, map_blue;
     logic [3:0] wg_red, wg_green, wg_blue;
     logic [3:0] fb_red, fb_green, fb_blue;
+    logic [3:0] win_red, win_green, win_blue;
+    logic [3:0] gameover_red, gameover_green, gameover_blue;
    
 //     logic [3:0] wg_base_red, wg_base_green, wg_base_blue;
 //     logic [3:0] wg_left1_red, wg_left1_green, wg_left1_blue;
@@ -294,6 +296,22 @@ module mb_final_top(
     );
     
     box box_instance (
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .frame_clk(vsync),
+        .Reset(reset_ah),
+        .*
+    );
+    
+    gameover gameover (
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .frame_clk(vsync),
+        .Reset(reset_ah),
+        .*
+    );
+    
+    win win (
         .DrawX(drawX),
         .DrawY(drawY),
         .frame_clk(vsync),
