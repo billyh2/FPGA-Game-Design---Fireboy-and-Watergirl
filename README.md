@@ -31,3 +31,5 @@ To successfully run this project, you will need:
    ```bash
    git clone https://github.com/your-repo/fireboy-watergirl-fpga.git
    cd fireboy-watergirl-fpga
+
+Video Demo: https://youtu.be/uJ_oUDHjr70
