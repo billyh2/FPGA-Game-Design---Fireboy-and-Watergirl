@@ -32,4 +32,5 @@ To successfully run this project, you will need:
    git clone https://github.com/your-repo/fireboy-watergirl-fpga.git
    cd fireboy-watergirl-fpga
 
-Video Demo: https://youtu.be/uJ_oUDHjr70
+## Video Demo
+Link: https://youtu.be/uJ_oUDHjr70
